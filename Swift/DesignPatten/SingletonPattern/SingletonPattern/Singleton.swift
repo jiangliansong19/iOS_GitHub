@@ -10,8 +10,8 @@ import UIKit
 
 class SingletonA {
     
-    static let shared = SingletonA()
-    private init() {}
+    static let shared = SingletonA() // 创建静态实例
+    private init() {} // 隐藏init方法
     
     
     var count = 0

@@ -12,6 +12,7 @@ enum ShapeStyle {
     case circle
     case square
     case triangle
+    case rectangle
 }
 
 class ShapeFactory: NSObject {
@@ -25,31 +26,27 @@ class ShapeFactory: NSObject {
             return Square()
         case .triangle:
             return Triangle()
+        case .rectangle:
+            return Rectangle()
         }
     }
 }
 
-
-
-class Shape: UIView {
-    
-    override func draw(_ rect: CGRect) {
-        
-        print("I am a shape")
-        
-    }
+protocol Shape {
+    func draw(_ rect: CGRect)
 }
+
 
 class Circle: Shape {
     
-    override func draw(_ rect: CGRect) {
+    func draw(_ rect: CGRect) {
         print("I am a Circle")
     }
 }
 
 class Square: Shape {
     
-    override func draw(_ rect: CGRect) {
+    func draw(_ rect: CGRect) {
         print("I am a Square")
     }
     
@@ -58,8 +55,14 @@ class Square: Shape {
 
 class Triangle: Shape {
     
-    override func draw(_ rect: CGRect) {
+    func draw(_ rect: CGRect) {
         print("I am a Triangle")
     }
     
+}
+
+class Rectangle: Shape {
+    func draw(_ rect: CGRect) {
+        print("I am a Rectangle")
+    }
 }

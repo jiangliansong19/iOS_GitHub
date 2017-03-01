@@ -23,8 +23,12 @@ class ViewController: UIViewController {
         let shape = ShapeFactory.getShape(style: .circle)
         shape.draw(self.view.bounds)
         
+        let rect = ShapeFactory.getShape(style: .rectangle)
+        
+        
         let obj = VehicleFactory().getObject(.car)
         obj.drive()
+
     }
 
     override func didReceiveMemoryWarning() {
