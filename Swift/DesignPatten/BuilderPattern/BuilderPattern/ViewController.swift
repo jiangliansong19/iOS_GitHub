@@ -18,7 +18,10 @@ import UIKit
 
 
 /*
- 建造者模式：一部手机，很复杂，很难在某个工厂里直接制造。所以，分成了很多个零配件，分别在不同的工厂制造，最后，按照特定的工序组合起来。
+ 建造者模式：一部手机，很复杂，在某个工厂里直接制造很困难。
+ 1.分成了很多个零配件，分别在不同的工厂制造。
+ 2.每种零配件，都有很多种不同的品牌，规格等，可以任选。
+ 3.最后，按照组装工厂期望的方式组装。
  */
 
 class ViewController: UIViewController {
@@ -35,14 +38,6 @@ class ViewController: UIViewController {
         let nonVegMeal = MealBuilder().prepareNonVegMeal()
         print("\nnonVegMeal----\(nonVegMeal.getCost())")
         print("\nnonVegMeal----\(nonVegMeal.show(items: vegMeal.array))")
-        
-        
-        
-        
-        
-        
-        
-        
         
     }
 
