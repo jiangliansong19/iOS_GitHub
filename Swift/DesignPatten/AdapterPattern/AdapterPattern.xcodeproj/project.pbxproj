@@ -310,6 +310,7 @@
 				209003AB1E57DD04007B5C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

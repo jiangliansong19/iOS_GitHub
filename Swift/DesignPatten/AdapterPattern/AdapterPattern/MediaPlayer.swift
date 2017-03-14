@@ -8,48 +8,34 @@
 
 import UIKit
 
-
-@objc protocol MediaPlayer {
-    @objc optional func play(audioType: String, fileName: String)
+//视频播放器
+protocol AdvancedMediaPlayer {
+    func play(fileName: String)
 }
-
-
-@objc protocol AdvancedMediaPlayer {
-    @objc optional func playVlc(fileName: String)
-    @objc optional func playMp4(fileName: String)
-}
-
 
 class VlcPlayer: AdvancedMediaPlayer {
-    func playVlc(fileName: String) {
+    func play(fileName: String) {
         print("Playing vlc file. Name: \(fileName).vlc")
-    }
-    
-    func playMp4(fileName: String) {
-        
     }
 }
 
 class Mp4Player: AdvancedMediaPlayer {
-    func playVlc(fileName: String) {
-        
-    }
-    func playMp4(fileName: String) {
+    func play(fileName: String) {
         print("Playing mp4 file. Name: \(fileName).mp4")
     }
 }
 
 
 
-class MediaAdapter: MediaPlayer {
+
+//适配器。将多种视频播放器，适配到audioPlayer
+class MediaAdapter: NSObject {
     
     func play(audioType: String, fileName: String) {
         if audioType.lowercased() == "mp4" {
-            Mp4Player().playMp4(fileName: fileName)
+            Mp4Player().play(fileName: fileName)
         }else if audioType.lowercased() == "vlc" {
-            VlcPlayer().playVlc(fileName: fileName)
+            VlcPlayer().play(fileName: fileName)
         }
     }
 }
-
-

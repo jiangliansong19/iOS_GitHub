@@ -8,7 +8,9 @@
 
 import UIKit
 
-class AudioPlayer: MediaPlayer {
+
+// 媒体播放器
+class AudioPlayer: NSObject {
     
     func play(audioType: String, fileName: String) {
         
