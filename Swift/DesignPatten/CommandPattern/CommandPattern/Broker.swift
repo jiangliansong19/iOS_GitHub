@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 经纪人，命令的调用者
 class Broker: NSObject {
 
     var array = [Order]()

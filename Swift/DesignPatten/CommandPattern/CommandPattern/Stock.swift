@@ -8,16 +8,17 @@
 
 import UIKit
 
+// 仓库，命令的执行者
 class Stock: NSObject {
 
     var name: String = "fruit"
-    var quantity: Int = 0
+    var quantity: Int = 100
     
     func buy() {
-        print("Stock [name:\(name)  quantity:\(quantity)] bought")
+        print("Stock [name:\(name)  quantity:\(quantity)kg] bought")
     }
     
     func sell() {
-        print("Stock [name:\(name)  quantity:\(quantity)] sold")
+        print("Stock [name:\(name)  quantity:\(quantity)kg] sold")
     }
 }

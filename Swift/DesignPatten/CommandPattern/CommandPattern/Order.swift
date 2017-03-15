@@ -17,7 +17,7 @@ protocol Order {
 // 具体命令类
 class BuyStock: Order {
     
-    var stock: Stock!
+    private var stock: Stock!
     
     init(_ stock: Stock) {
         self.stock = stock
@@ -31,7 +31,7 @@ class BuyStock: Order {
 // 具体命令类
 class SellStock: Order {
     
-    var stock: Stock!
+    private var stock: Stock!
     
     init(_ stock: Stock) {
         self.stock = stock

@@ -16,12 +16,12 @@ class GoodsFactory: NSObject {
         
         if GoodsFactory.pool[name] == nil {
             let goods = Goods(name: name)
-            print("创建了新商品---\(goods.name)")
+            print("创建了新商品---\(goods.name,goods)")
             GoodsFactory.pool[name] = goods
             return goods
         }else {
             let goods = GoodsFactory.pool[name]!
-            print("使用商品缓存---\(goods.name)")
+            print("使用商品缓存---\(goods.name,goods)")
             return goods
         }
     }

@@ -12,7 +12,7 @@ protocol IGoods {
     func showGoodsPrice(key: String)
 }
 
-class Goods: IGoods {
+class Goods:NSObject, IGoods {
 
     var price = 0.0
     var name = ""

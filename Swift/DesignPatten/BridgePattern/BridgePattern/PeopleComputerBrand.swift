@@ -17,6 +17,7 @@ protocol People {
     func people()
 }
 
+
 //电脑的基类
 protocol Computer {
     func use()
