@@ -4,11 +4,10 @@ import UIKit
 
 // 一般使用
 var array = [-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9]
-array = array.map {$0*$0*$0}
-array
-
-
-array.flatMap{$0-1}
+let strings = array.map{String($0)}
+let strings1 = array.map { (a) -> String in
+    return String(a)
+}
 array
 
 
@@ -34,6 +33,8 @@ let flatmapArray = array.flatMap { (index:Int) -> Int? in
 flatmapArray
 
 
+
+
 // MARK: -
 // map函数的内部实现------错误写法
 // 这种写法，只能原数组，新数组的元素，都是同一类型。
@@ -50,6 +51,9 @@ extension Array {
         return result
     }
 }
+
+
+
 
 let tempArray1 = [1,2,3,4,5].maps{$0*$0}
 tempArray1
@@ -69,7 +73,7 @@ tempArray2
 // 思考：U是什么，Element
 // Element是原数组中的元素类型占位符，U是元素转换后的类型的占位符
 extension Array {
-    
+
     func myMap<U>(transform:(Element)->U) -> [U] {
         
         var result:[U] = []
@@ -81,6 +85,7 @@ extension Array {
         return result
     }
 }
+
 let testArray4 = [1,2,3,4].myMap{UIView.init(frame: CGRect(x: $0, y: $0, width: 10, height: 10))}
 testArray4
 
@@ -89,7 +94,11 @@ testArray4
 (1...100).map(String.init)
 
 
+
+
 // MARK: - lazy对map的影响
+
+
 // 方式一：
 let ints1 = 1...4
 let results1 = ints1.map { (index) -> Int in
@@ -100,6 +109,9 @@ for obj in results1 {
     print("处理结果 index = \(obj)")
 }
 
+
+
+
 // 方式二:
 let ints2 = 1...4
 let results2 = ints2.lazy.map { (index) -> Int in
@@ -109,3 +121,6 @@ let results2 = ints2.lazy.map { (index) -> Int in
 for obj in results2 {
     print("处理结果 index = \(obj)")
 }
+
+
+
