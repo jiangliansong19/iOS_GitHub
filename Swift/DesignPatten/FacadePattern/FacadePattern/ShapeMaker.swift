@@ -10,8 +10,6 @@ import UIKit
 
 class ShapeMaker: NSObject {
 
-
-    
     class func drawCircle() {
         Circle().draw()
     }
