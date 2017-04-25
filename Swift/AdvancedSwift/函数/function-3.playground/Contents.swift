@@ -22,3 +22,4 @@ let b = [2,3,4,5].map(doublerr)
 
 //无法省略参数，但是又不太关心参数是什么
 (0...100).map{_ in arc4random()}
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EVO-9f-Pu6">
+                                <rect key="frame" x="139" y="318.5" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HQe-zt-SRj"/>
+                                    <constraint firstAttribute="width" constant="97" id="JIg-1e-BfA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yi-92-UFa">
+                                <rect key="frame" x="132.5" y="370.5" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="U6S-YD-kZl"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zub-6i-oT4"/>
+                                </constraints>
+                                <state key="normal" title="赋值触法KVO"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3Q-Wn-gLK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiK-zv-766">
+                                <rect key="frame" x="132" y="420.5" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KpF-i3-GWu"/>
+                                    <constraint firstAttribute="width" constant="110" id="WNe-6g-asD"/>
+                                </constraints>
+                                <state key="normal" title="方法出发KVO"/>
+                                <connections>
+                                    <action selector="buttonAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNY-BT-qoQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GiK-zv-766" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6WW-bf-sfH"/>
+                            <constraint firstItem="EVO-9f-Pu6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Kf-am-Quk"/>
+                            <constraint firstItem="EVO-9f-Pu6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FTF-w7-KH8"/>
+                            <constraint firstItem="1Yi-92-UFa" firstAttribute="top" secondItem="EVO-9f-Pu6" secondAttribute="bottom" constant="22" id="HwM-bt-dec"/>
+                            <constraint firstItem="GiK-zv-766" firstAttribute="top" secondItem="1Yi-92-UFa" secondAttribute="bottom" constant="20" id="MIO-kd-raX"/>
+                            <constraint firstItem="1Yi-92-UFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MqL-Wf-KiY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTF" destination="EVO-9f-Pu6" id="NDU-0R-6IO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
