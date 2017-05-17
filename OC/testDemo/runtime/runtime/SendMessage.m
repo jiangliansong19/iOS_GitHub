@@ -10,4 +10,8 @@
 
 @implementation SendMessage
 
+- (void)printf:(NSString *)message {
+    NSLog(@"%s发送消息%@",__FUNCTION__,message);
+}
+
 @end

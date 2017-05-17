@@ -1,0 +1,3 @@
+target ‘CoreData使用’ do
+pod ‘MJExtension’
+end

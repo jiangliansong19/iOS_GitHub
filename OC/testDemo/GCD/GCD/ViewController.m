@@ -121,11 +121,13 @@ void showString() {
 
 - (IBAction)dispatch_apply:(id)sender {
     NSArray *array = @[@"jiang",@"lian",@"song",@"xiao",@"bai"];
+    __block int count = 0;
     dispatch_apply(array.count, dispatch_get_global_queue(0, 0), ^(size_t index) {
         NSLog(@"==%zu",index);
+        count = (int)index;
         sleep(2);
     });
-    NSLog(@"完成");
+    NSLog(@"完成 count = %d",count);
 }
 
 @end

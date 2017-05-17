@@ -19,11 +19,18 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor redColor];
+    NSLog(@"%p === ",@selector(printfSELAddress));
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+- (void)printfSELAddress {
+    
 }
 
 /*

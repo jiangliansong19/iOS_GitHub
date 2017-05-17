@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7927825d-b8a2-6e45-8724-83f0fb39e911",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7927825d-b8a2-6e45-8724-83f0fb39e911" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7927825d-b8a2-6e45-8724-83f0fb39e911" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "72D21B3D-3693-4B8B-B7D4-9CFE90067138",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7927825d-b8a2-6e45-8724-83f0fb39e911" : "ios_aliyun\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "多线程Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "多线程Demo\/多线程Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/139.129.94.150\/svn\/Demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7927825d-b8a2-6e45-8724-83f0fb39e911"
+    }
+  ]
+}

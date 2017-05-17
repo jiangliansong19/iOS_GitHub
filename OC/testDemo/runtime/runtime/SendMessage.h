@@ -13,5 +13,9 @@
 @property (nonatomic, strong) NSString *from;
 @property (nonatomic, strong) NSString *to;
 @property (nonatomic, strong) NSString *message;
+@property (nonatomic, assign) int totalNum;
+
+- (void)printf:(NSString *)message;
+
 
 @end

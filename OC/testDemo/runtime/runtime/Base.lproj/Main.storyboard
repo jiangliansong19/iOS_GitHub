@@ -53,17 +53,56 @@
                                     <action selector="动态添加方法:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tl-h9-w8n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMq-UZ-3P8">
+                                <rect key="frame" x="16" y="319" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uBM-gN-KP1"/>
+                                </constraints>
+                                <state key="normal" title="objc_msgSend"/>
+                                <connections>
+                                    <action selector="直接调用objc_msgSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJR-ls-Z7D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhB-vl-2q2">
+                                <rect key="frame" x="16" y="379" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ykX-ih-udK"/>
+                                </constraints>
+                                <state key="normal" title="objc_msgForward"/>
+                                <connections>
+                                    <action selector="直接调用objc_msgForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79w-Ga-PDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0w-C3-JpH">
+                                <rect key="frame" x="16" y="439" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Ni-kb-vVW"/>
+                                </constraints>
+                                <state key="normal" title="获取属性"/>
+                                <connections>
+                                    <action selector="获取对象的属性列表:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFh-G1-dme"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JoF-P1-bED" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7xP-ed-iup"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GMq-UZ-3P8" secondAttribute="trailing" id="BEE-wW-U8u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CMg-nE-Y5q" secondAttribute="trailing" id="C0m-ey-Otl"/>
                             <constraint firstItem="CMg-nE-Y5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GQG-gX-dmc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rhB-vl-2q2" secondAttribute="trailing" id="ICh-qc-wZ9"/>
                             <constraint firstItem="CMg-nE-Y5q" firstAttribute="top" secondItem="jjt-ah-pFn" secondAttribute="bottom" constant="30" id="Is1-sR-bxd"/>
                             <constraint firstItem="jjt-ah-pFn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P77-H7-4lb"/>
+                            <constraint firstItem="rhB-vl-2q2" firstAttribute="top" secondItem="GMq-UZ-3P8" secondAttribute="bottom" constant="30" id="S2F-5P-Dcb"/>
+                            <constraint firstItem="GMq-UZ-3P8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WRh-hg-dqo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JoF-P1-bED" secondAttribute="trailing" id="XD8-P0-SR3"/>
+                            <constraint firstItem="c0w-C3-JpH" firstAttribute="top" secondItem="rhB-vl-2q2" secondAttribute="bottom" constant="30" id="ZTs-bH-Jxj"/>
+                            <constraint firstItem="c0w-C3-JpH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bp2-dz-2KI"/>
                             <constraint firstItem="jjt-ah-pFn" firstAttribute="top" secondItem="JoF-P1-bED" secondAttribute="bottom" constant="30" id="fTj-uS-P2F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c0w-C3-JpH" secondAttribute="trailing" id="gBA-eO-qmP"/>
                             <constraint firstItem="JoF-P1-bED" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="kT4-n5-dP7"/>
+                            <constraint firstItem="GMq-UZ-3P8" firstAttribute="top" secondItem="CMg-nE-Y5q" secondAttribute="bottom" constant="30" id="mmP-Qv-iH9"/>
+                            <constraint firstItem="rhB-vl-2q2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ufk-xT-XSo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jjt-ah-pFn" secondAttribute="trailing" id="wEM-Oj-HTJ"/>
                         </constraints>
                     </view>
