@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'ReactiveCocoa-Demo' do
+	pod 'ReactiveCocoa', '~> 5.0.0'
+end

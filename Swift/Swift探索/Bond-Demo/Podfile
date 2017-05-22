@@ -1,0 +1,5 @@
+use_frameworks!
+
+target ‘Bond-Demo' do
+	pod 'Bond'
+end

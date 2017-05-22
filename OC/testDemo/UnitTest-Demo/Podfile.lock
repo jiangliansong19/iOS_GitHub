@@ -1,0 +1,35 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - GHUnit (0.6.0)
+  - OCHamcrest (6.1.1)
+  - OCMockito (4.1.0):
+    - OCHamcrest (~> 6.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - GHUnit
+  - OCMockito
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  GHUnit: 327085549049e5a5f5f317a1e240a0ced5482f44
+  OCHamcrest: 363e1bf738c3e8a94abe7c2c415f70d671adde38
+  OCMockito: bceefcd365252bcdf8b59c1b2bd23890805fc0d8
+
+PODFILE CHECKSUM: faaf36a3dc8d43cfc685477b608d225890644e8e
+
+COCOAPODS: 1.2.1

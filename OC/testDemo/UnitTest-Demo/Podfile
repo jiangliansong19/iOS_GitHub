@@ -1,0 +1,9 @@
+
+target ‘UnitTest-Demo’ do
+    pod 'AFNetworking'
+end
+
+target ‘UnitTest-DemoTests’ do
+    pod 'GHUnit'
+    pod 'OCMockito'
+end
