@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B259E391EDEBC6900468385 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B259E381EDEBC6900468385 /* ViewControllerB.m */; };
 		6BDF79551EAA34B200716FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF79541EAA34B200716FA3 /* main.m */; };
 		6BDF79581EAA34B200716FA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF79571EAA34B200716FA3 /* AppDelegate.m */; };
 		6BDF795B1EAA34B200716FA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF795A1EAA34B200716FA3 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B259E371EDEBC6900468385 /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		6B259E381EDEBC6900468385 /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		6BDF79501EAA34B200716FA3 /* runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDF79541EAA34B200716FA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BDF79561EAA34B200716FA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				6BDF79D01EAB817200B72D97 /* ViewController+Function.h */,
 				6BDF79D11EAB817200B72D97 /* ViewController+Function.m */,
 				6BDF79D31EAB85CE00B72D97 /* JSPatchPlatform.framework */,
+				6B259E371EDEBC6900468385 /* ViewControllerB.h */,
+				6B259E381EDEBC6900468385 /* ViewControllerB.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				6BDF79581EAA34B200716FA3 /* AppDelegate.m in Sources */,
 				6BDF79CF1EAB7D5000B72D97 /* ViewControllerA.m in Sources */,
 				6BDF79551EAA34B200716FA3 /* main.m in Sources */,
+				6B259E391EDEBC6900468385 /* ViewControllerB.m in Sources */,
 				6BDF79C91EAB259400B72D97 /* SendMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/runtime",
@@ -307,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/runtime",

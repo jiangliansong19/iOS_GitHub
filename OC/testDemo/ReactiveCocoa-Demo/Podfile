@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'ReactiveCocoa-Demo' do
+	pod 'ReactiveObjC'
+end

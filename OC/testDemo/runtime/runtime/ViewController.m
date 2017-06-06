@@ -43,7 +43,7 @@
     
     //使用3:runtime读写属性
     unsigned int outCount, i;
-    objc_property_t *properties = class_copyPropertyList(newClass, &outCount);
+    objc_property_t *properties = class_copyPropertyList([UITableViewCell class], &outCount);
     for (i=0; i<outCount; i++) {
         objc_property_t property = properties[i];
         NSString *name = [NSString stringWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
@@ -76,7 +76,7 @@ void func3(id self, SEL _cmd) {
 
 //使用4:拦截系统方法
 - (IBAction)拦截系统方法:(UIButton *)sender {
-    Method *mothod = class_getInstanceMethod([ViewController class], @selector(viewWillDisappear:));
+    class_getInstanceMethod([ViewController class], @selector(viewWillDisappear:));
     NSLog(@"====");
 }
 

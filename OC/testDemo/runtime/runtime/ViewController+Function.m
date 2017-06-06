@@ -20,4 +20,8 @@
     return objc_getAssociatedObject(self, @"MyAddress");
 }
 
+- (void)eatFood {
+    NSLog(@"吃东西");
+}
+
 @end

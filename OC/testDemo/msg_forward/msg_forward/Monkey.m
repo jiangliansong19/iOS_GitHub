@@ -24,7 +24,7 @@ id dynamicIMP(id self, SEL _cmd, NSString *str) {
 }
 //1.mothod resolution
 + (BOOL)resolveInstanceMethod:(SEL)sel {
-    return class_addMethod(self, sel, (IMP)dynamicIMP, "@@");
+    return class_addMethod(self, sel, (IMP)dynamicIMP, "v@");
 }
 //2.fast forwarding
 - (id)forwardingTargetForSelector:(SEL)aSelector {
