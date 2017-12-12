@@ -21,16 +21,18 @@
         SEL swizzSel = @selector(swizz_viewWillAppear:);
         Method originMethod = class_getInstanceMethod(class, originSel);
         Method swizzMethod = class_getInstanceMethod(class, swizzSel);
-        
-        NSLog(@"----load-----");
-        
-//        //2.为什么要用addMethod，为什么不直接调用methodExchange呢？？
-//        BOOL didAdded = class_addMethod(class, originSel, method_getImplementation(swizzMethod), method_getTypeEncoding(swizzMethod));
-//        if (didAdded) {
-//            
-//        }else {
+
+        /*2.为什么要用addMethod，为什么不直接调用methodExchange呢？？
+        @note class_addMethod will add an override of a superclass's implementation,
+        but will not replace an existing implementation in this class.
+        To change an existing implementation, use method_setImplementation.
+        */
+        BOOL didAdded = class_addMethod(class, originSel, method_getImplementation(swizzMethod), method_getTypeEncoding(swizzMethod));
+        if (didAdded) {
+            class_replaceMethod(class,swizzSel, method_getImplementation(originMethod), method_getTypeEncoding(originMethod));
+        }else {
             method_exchangeImplementations(originMethod, swizzMethod);
-//        }
+        }
     });
 }
 

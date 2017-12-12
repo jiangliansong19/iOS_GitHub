@@ -41,7 +41,8 @@ int main(int argc, const char * argv[]) {
         per.age = 20;
         per.name = @"jiangliansong";
         NSLog(@"%@ is %d old",per.name, per.age);
-    
+        
+        class_getInstanceMethod([Person class], <#SEL  _Nonnull name#>)
     }
     return 0;
 }

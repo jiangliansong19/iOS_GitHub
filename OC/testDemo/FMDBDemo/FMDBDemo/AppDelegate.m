@@ -16,19 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     FMViewController *FMVc = [[FMViewController alloc] init];
-    
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:FMVc];
-    
     self.window.rootViewController = navController;
-    
-    
     [self.window makeKeyAndVisible];
-    
-    
     return YES;
 }
 

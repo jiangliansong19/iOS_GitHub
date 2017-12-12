@@ -74,7 +74,7 @@ class viewController: UIViewController {
         button.backgroundColor = UIColor.lightGray
         button.setTitle("点我开始加载", for: .normal)
         button.setTitleColor(UIColor.blue, for: .normal)
-        button.addTarget(self.personViewModel, action: Selector("showPersonInfo"), for: .touchUpInside)
+        button.addTarget(self.personViewModel, action: #selector(PersonViewModel.showPersonInfo), for: .touchUpInside)
         self.view.addSubview(button)
     }
 }
@@ -82,4 +82,5 @@ class viewController: UIViewController {
 
 let vc = viewController()
 vc.view.frame = CGRect(x: 0, y: 0, width: 375, height: 568)
+vc.view.backgroundColor = UIColor.red
 PlaygroundPage.current.liveView = vc.view

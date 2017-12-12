@@ -7,66 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2997D4951DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997D4941DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift */; };
-		29E2CDD81DC7B4CF00A9E0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDB51DC7B4CF00A9E0F4 /* AppDelegate.swift */; };
-		29E2CDDA1DC7B4CF00A9E0F4 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBA1DC7B4CF00A9E0F4 /* DateSortable.swift */; };
-		29E2CDDB1DC7B4CF00A9E0F4 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBB1DC7B4CF00A9E0F4 /* JournalEntry.swift */; };
-		29E2CDDC1DC7B4CF00A9E0F4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBC1DC7B4CF00A9E0F4 /* Message.swift */; };
-		29E2CDDD1DC7B4CF00A9E0F4 /* SolFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBD1DC7B4CF00A9E0F4 /* SolFormatter.swift */; };
-		29E2CDDE1DC7B4CF00A9E0F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBE1DC7B4CF00A9E0F4 /* User.swift */; };
-		29E2CDDF1DC7B4CF00A9E0F4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDBF1DC7B4CF00A9E0F4 /* Weather.swift */; };
-		29E2CDE01DC7B4CF00A9E0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */; };
-		29E2CDE21DC7B4CF00A9E0F4 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29E2CDC31DC7B4CF00A9E0F4 /* OCRAStd.otf */; };
-		29E2CDE61DC7B4CF00A9E0F4 /* JournalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDC91DC7B4CF00A9E0F4 /* JournalLoader.swift */; };
-		29E2CDE71DC7B4CF00A9E0F4 /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCA1DC7B4CF00A9E0F4 /* Pathfinder.swift */; };
-		29E2CDE81DC7B4CF00A9E0F4 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */; };
-		29E2CDE91DC7B4CF00A9E0F4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */; };
-		29E2CDEA1DC7B4CF00A9E0F4 /* WxScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCD1DC7B4CF00A9E0F4 /* WxScanner.swift */; };
-		29E2CDEB1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDCF1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift */; };
-		29E2CDED1DC7B4CF00A9E0F4 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD21DC7B4CF00A9E0F4 /* CustomNavigationBar.swift */; };
-		29E2CDEE1DC7B4CF00A9E0F4 /* JournalEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD31DC7B4CF00A9E0F4 /* JournalEntryCell.swift */; };
-		29E2CDEF1DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD41DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift */; };
-		29E2CDF01DC7B4CF00A9E0F4 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */; };
-		29E2CDF11DC7B4CF00A9E0F4 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */; };
-		29E2CDF21DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */; };
-		29E2CDF51DC7B4E300A9E0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E2CDF31DC7B4E300A9E0F4 /* LaunchScreen.storyboard */; };
 		4E5F852CC0CB83A4C2F8AE7F /* Pods_Marslink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */; };
-		6B7621661F48A74F00EAD081 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7621651F48A74F00EAD081 /* FeedViewController.swift */; };
-		6B7621681F48A9A900EAD081 /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7621671F48A9A900EAD081 /* JournalSectionController.swift */; };
-		6B76216A1F48AAE900EAD081 /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7621691F48AAE900EAD081 /* MessageSectionController.swift */; };
-		6B76216C1F48AC1800EAD081 /* WeatherSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B76216B1F48AC1800EAD081 /* WeatherSectionController.swift */; };
+		6B3737D91FA632940009CBA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737B61FA632940009CBA5 /* AppDelegate.swift */; };
+		6B3737DA1FA632940009CBA5 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737B81FA632940009CBA5 /* DateSortable.swift */; };
+		6B3737DB1FA632940009CBA5 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737B91FA632940009CBA5 /* JournalEntry.swift */; };
+		6B3737DC1FA632940009CBA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737BA1FA632940009CBA5 /* Message.swift */; };
+		6B3737DD1FA632940009CBA5 /* NSObject+IGListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737BB1FA632940009CBA5 /* NSObject+IGListDiffable.swift */; };
+		6B3737DE1FA632940009CBA5 /* SolFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737BC1FA632940009CBA5 /* SolFormatter.swift */; };
+		6B3737DF1FA632940009CBA5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737BD1FA632940009CBA5 /* User.swift */; };
+		6B3737E01FA632940009CBA5 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737BE1FA632940009CBA5 /* Weather.swift */; };
+		6B3737E11FA632940009CBA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3737C01FA632940009CBA5 /* Assets.xcassets */; };
+		6B3737E21FA632940009CBA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3737C11FA632940009CBA5 /* LaunchScreen.storyboard */; };
+		6B3737E31FA632940009CBA5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B3737C31FA632940009CBA5 /* Info.plist */; };
+		6B3737E41FA632940009CBA5 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B3737C41FA632940009CBA5 /* OCRAStd.otf */; };
+		6B3737E51FA632940009CBA5 /* JournalLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737C71FA632940009CBA5 /* JournalLoader.swift */; };
+		6B3737E61FA632940009CBA5 /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737C81FA632940009CBA5 /* Pathfinder.swift */; };
+		6B3737E71FA632940009CBA5 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737C91FA632940009CBA5 /* TextSize.swift */; };
+		6B3737E81FA632940009CBA5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737CA1FA632940009CBA5 /* Theme.swift */; };
+		6B3737E91FA632950009CBA5 /* WxScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737CB1FA632940009CBA5 /* WxScanner.swift */; };
+		6B3737EA1FA632950009CBA5 /* ClassicFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737CD1FA632940009CBA5 /* ClassicFeedViewController.swift */; };
+		6B3737EB1FA632950009CBA5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737CE1FA632940009CBA5 /* FeedViewController.swift */; };
+		6B3737EC1FA632950009CBA5 /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737CF1FA632940009CBA5 /* JournalSectionController.swift */; };
+		6B3737ED1FA632950009CBA5 /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D01FA632940009CBA5 /* MessageSectionController.swift */; };
+		6B3737EE1FA632950009CBA5 /* WeatherSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D11FA632940009CBA5 /* WeatherSectionController.swift */; };
+		6B3737EF1FA632950009CBA5 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D31FA632940009CBA5 /* CustomNavigationBar.swift */; };
+		6B3737F01FA632950009CBA5 /* JournalEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D41FA632940009CBA5 /* JournalEntryCell.swift */; };
+		6B3737F11FA632950009CBA5 /* JournalEntryDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D51FA632940009CBA5 /* JournalEntryDateCell.swift */; };
+		6B3737F21FA632950009CBA5 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D61FA632940009CBA5 /* MessageCell.swift */; };
+		6B3737F31FA632950009CBA5 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D71FA632940009CBA5 /* WeatherDetailCell.swift */; };
+		6B3737F41FA632950009CBA5 /* WeatherSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3737D81FA632940009CBA5 /* WeatherSummaryCell.swift */; };
+		6B3737FA1FA636BA0009CBA5 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3737FB1FA636BA0009CBA5 /* IGListKit.framework */; };
+		6B3737FC1FA636BE0009CBA5 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3737FD1FA636BE0009CBA5 /* MJRefresh.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2949EE881D8AB4F4005BC671 /* Marslink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marslink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2997D4941DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+IGListDiffable.swift"; sourceTree = "<group>"; };
-		29E2CDB51DC7B4CF00A9E0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Marslink/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		29E2CDBA1DC7B4CF00A9E0F4 /* DateSortable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
-		29E2CDBB1DC7B4CF00A9E0F4 /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
-		29E2CDBC1DC7B4CF00A9E0F4 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		29E2CDBD1DC7B4CF00A9E0F4 /* SolFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolFormatter.swift; sourceTree = "<group>"; };
-		29E2CDBE1DC7B4CF00A9E0F4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		29E2CDBF1DC7B4CF00A9E0F4 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29E2CDC21DC7B4CF00A9E0F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29E2CDC31DC7B4CF00A9E0F4 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
-		29E2CDC91DC7B4CF00A9E0F4 /* JournalLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalLoader.swift; sourceTree = "<group>"; };
-		29E2CDCA1DC7B4CF00A9E0F4 /* Pathfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
-		29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
-		29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		29E2CDCD1DC7B4CF00A9E0F4 /* WxScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WxScanner.swift; sourceTree = "<group>"; };
-		29E2CDCF1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicFeedViewController.swift; sourceTree = "<group>"; };
-		29E2CDD21DC7B4CF00A9E0F4 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		29E2CDD31DC7B4CF00A9E0F4 /* JournalEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryCell.swift; sourceTree = "<group>"; };
-		29E2CDD41DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryDateCell.swift; sourceTree = "<group>"; };
-		29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
-		29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSummaryCell.swift; sourceTree = "<group>"; };
-		29E2CDF41DC7B4E300A9E0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6B7621651F48A74F00EAD081 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		6B7621671F48A9A900EAD081 /* JournalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
-		6B7621691F48AAE900EAD081 /* MessageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
-		6B76216B1F48AC1800EAD081 /* WeatherSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSectionController.swift; sourceTree = "<group>"; };
+		6B3737B61FA632940009CBA5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B3737B81FA632940009CBA5 /* DateSortable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
+		6B3737B91FA632940009CBA5 /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		6B3737BA1FA632940009CBA5 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6B3737BB1FA632940009CBA5 /* NSObject+IGListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+IGListDiffable.swift"; sourceTree = "<group>"; };
+		6B3737BC1FA632940009CBA5 /* SolFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolFormatter.swift; sourceTree = "<group>"; };
+		6B3737BD1FA632940009CBA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6B3737BE1FA632940009CBA5 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		6B3737C01FA632940009CBA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B3737C21FA632940009CBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B3737C31FA632940009CBA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3737C41FA632940009CBA5 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
+		6B3737C71FA632940009CBA5 /* JournalLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalLoader.swift; sourceTree = "<group>"; };
+		6B3737C81FA632940009CBA5 /* Pathfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
+		6B3737C91FA632940009CBA5 /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
+		6B3737CA1FA632940009CBA5 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6B3737CB1FA632940009CBA5 /* WxScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WxScanner.swift; sourceTree = "<group>"; };
+		6B3737CD1FA632940009CBA5 /* ClassicFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicFeedViewController.swift; sourceTree = "<group>"; };
+		6B3737CE1FA632940009CBA5 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		6B3737CF1FA632940009CBA5 /* JournalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
+		6B3737D01FA632940009CBA5 /* MessageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
+		6B3737D11FA632940009CBA5 /* WeatherSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSectionController.swift; sourceTree = "<group>"; };
+		6B3737D31FA632940009CBA5 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		6B3737D41FA632940009CBA5 /* JournalEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryCell.swift; sourceTree = "<group>"; };
+		6B3737D51FA632940009CBA5 /* JournalEntryDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryDateCell.swift; sourceTree = "<group>"; };
+		6B3737D61FA632940009CBA5 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		6B3737D71FA632940009CBA5 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
+		6B3737D81FA632940009CBA5 /* WeatherSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSummaryCell.swift; sourceTree = "<group>"; };
+		6B3737F51FA632FF0009CBA5 /* Marslink_Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marslink_Bridging.h; sourceTree = "<group>"; };
+		6B3737F71FA635130009CBA5 /* IGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3737F91FA635160009CBA5 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3737FB1FA636BA0009CBA5 /* IGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3737FD1FA636BE0009CBA5 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
 		C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3FA05C5618EC7BE0845CC7 /* Pods-Marslink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3737FC1FA636BE0009CBA5 /* MJRefresh.framework in Frameworks */,
+				6B3737FA1FA636BA0009CBA5 /* IGListKit.framework in Frameworks */,
 				4E5F852CC0CB83A4C2F8AE7F /* Pods_Marslink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +97,7 @@
 		2949EE7F1D8AB4F4005BC671 = {
 			isa = PBXGroup;
 			children = (
-				2949EE8A1D8AB4F4005BC671 /* Marslink */,
+				6B3737B51FA632940009CBA5 /* Marslink */,
 				2949EE891D8AB4F4005BC671 /* Products */,
 				4B97DC9A6339555F884CAC3C /* Pods */,
 				4113AF7C8722AA508E7A56C4 /* Frameworks */,
@@ -102,90 +112,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2949EE8A1D8AB4F4005BC671 /* Marslink */ = {
-			isa = PBXGroup;
-			children = (
-				29E2CDB51DC7B4CF00A9E0F4 /* AppDelegate.swift */,
-				29E2CDB91DC7B4CF00A9E0F4 /* Models */,
-				29E2CDC01DC7B4CF00A9E0F4 /* Resources */,
-				29E2CDC81DC7B4CF00A9E0F4 /* Systems */,
-				29E2CDCE1DC7B4CF00A9E0F4 /* ViewControllers */,
-				29E2CDD11DC7B4CF00A9E0F4 /* Views */,
-			);
-			name = Marslink;
-			path = MarsExplorer;
-			sourceTree = "<group>";
-		};
-		29E2CDB91DC7B4CF00A9E0F4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				29E2CDBA1DC7B4CF00A9E0F4 /* DateSortable.swift */,
-				29E2CDBB1DC7B4CF00A9E0F4 /* JournalEntry.swift */,
-				29E2CDBC1DC7B4CF00A9E0F4 /* Message.swift */,
-				2997D4941DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift */,
-				29E2CDBD1DC7B4CF00A9E0F4 /* SolFormatter.swift */,
-				29E2CDBE1DC7B4CF00A9E0F4 /* User.swift */,
-				29E2CDBF1DC7B4CF00A9E0F4 /* Weather.swift */,
-			);
-			name = Models;
-			path = Marslink/Models;
-			sourceTree = SOURCE_ROOT;
-		};
-		29E2CDC01DC7B4CF00A9E0F4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				29E2CDC11DC7B4CF00A9E0F4 /* Assets.xcassets */,
-				29E2CDC21DC7B4CF00A9E0F4 /* Info.plist */,
-				29E2CDF31DC7B4E300A9E0F4 /* LaunchScreen.storyboard */,
-				29E2CDC31DC7B4CF00A9E0F4 /* OCRAStd.otf */,
-			);
-			name = Resources;
-			path = Marslink/Resources;
-			sourceTree = SOURCE_ROOT;
-		};
-		29E2CDC81DC7B4CF00A9E0F4 /* Systems */ = {
-			isa = PBXGroup;
-			children = (
-				29E2CDC91DC7B4CF00A9E0F4 /* JournalLoader.swift */,
-				29E2CDCA1DC7B4CF00A9E0F4 /* Pathfinder.swift */,
-				29E2CDCB1DC7B4CF00A9E0F4 /* TextSize.swift */,
-				29E2CDCC1DC7B4CF00A9E0F4 /* Theme.swift */,
-				29E2CDCD1DC7B4CF00A9E0F4 /* WxScanner.swift */,
-			);
-			name = Systems;
-			path = Marslink/Systems;
-			sourceTree = SOURCE_ROOT;
-		};
-		29E2CDCE1DC7B4CF00A9E0F4 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				29E2CDCF1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift */,
-				6B7621651F48A74F00EAD081 /* FeedViewController.swift */,
-				6B7621671F48A9A900EAD081 /* JournalSectionController.swift */,
-				6B7621691F48AAE900EAD081 /* MessageSectionController.swift */,
-				6B76216B1F48AC1800EAD081 /* WeatherSectionController.swift */,
-			);
-			name = ViewControllers;
-			path = Marslink/ViewControllers;
-			sourceTree = SOURCE_ROOT;
-		};
-		29E2CDD11DC7B4CF00A9E0F4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				29E2CDD21DC7B4CF00A9E0F4 /* CustomNavigationBar.swift */,
-				29E2CDD31DC7B4CF00A9E0F4 /* JournalEntryCell.swift */,
-				29E2CDD41DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift */,
-				29E2CDD51DC7B4CF00A9E0F4 /* MessageCell.swift */,
-				29E2CDD61DC7B4CF00A9E0F4 /* WeatherDetailCell.swift */,
-				29E2CDD71DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift */,
-			);
-			name = Views;
-			path = Marslink/Views;
-			sourceTree = SOURCE_ROOT;
-		};
 		4113AF7C8722AA508E7A56C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B3737FD1FA636BE0009CBA5 /* MJRefresh.framework */,
+				6B3737FB1FA636BA0009CBA5 /* IGListKit.framework */,
+				6B3737F91FA635160009CBA5 /* MJRefresh.framework */,
+				6B3737F71FA635130009CBA5 /* IGListKit.framework */,
 				C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */,
 			);
 			name = Frameworks;
@@ -198,6 +131,90 @@
 				DC3FA05C5618EC7BE0845CC7 /* Pods-Marslink.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B3737B51FA632940009CBA5 /* Marslink */ = {
+			isa = PBXGroup;
+			children = (
+				6B3737B61FA632940009CBA5 /* AppDelegate.swift */,
+				6B3737B71FA632940009CBA5 /* Models */,
+				6B3737BF1FA632940009CBA5 /* Resources */,
+				6B3737C51FA632940009CBA5 /* SectionControllers */,
+				6B3737C61FA632940009CBA5 /* Systems */,
+				6B3737CC1FA632940009CBA5 /* ViewControllers */,
+				6B3737D21FA632940009CBA5 /* Views */,
+				6B3737F51FA632FF0009CBA5 /* Marslink_Bridging.h */,
+			);
+			path = Marslink;
+			sourceTree = "<group>";
+		};
+		6B3737B71FA632940009CBA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B3737B81FA632940009CBA5 /* DateSortable.swift */,
+				6B3737B91FA632940009CBA5 /* JournalEntry.swift */,
+				6B3737BA1FA632940009CBA5 /* Message.swift */,
+				6B3737BB1FA632940009CBA5 /* NSObject+IGListDiffable.swift */,
+				6B3737BC1FA632940009CBA5 /* SolFormatter.swift */,
+				6B3737BD1FA632940009CBA5 /* User.swift */,
+				6B3737BE1FA632940009CBA5 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B3737BF1FA632940009CBA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B3737C01FA632940009CBA5 /* Assets.xcassets */,
+				6B3737C11FA632940009CBA5 /* LaunchScreen.storyboard */,
+				6B3737C31FA632940009CBA5 /* Info.plist */,
+				6B3737C41FA632940009CBA5 /* OCRAStd.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B3737C51FA632940009CBA5 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		6B3737C61FA632940009CBA5 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				6B3737C71FA632940009CBA5 /* JournalLoader.swift */,
+				6B3737C81FA632940009CBA5 /* Pathfinder.swift */,
+				6B3737C91FA632940009CBA5 /* TextSize.swift */,
+				6B3737CA1FA632940009CBA5 /* Theme.swift */,
+				6B3737CB1FA632940009CBA5 /* WxScanner.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		6B3737CC1FA632940009CBA5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B3737CD1FA632940009CBA5 /* ClassicFeedViewController.swift */,
+				6B3737CE1FA632940009CBA5 /* FeedViewController.swift */,
+				6B3737CF1FA632940009CBA5 /* JournalSectionController.swift */,
+				6B3737D01FA632940009CBA5 /* MessageSectionController.swift */,
+				6B3737D11FA632940009CBA5 /* WeatherSectionController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B3737D21FA632940009CBA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B3737D31FA632940009CBA5 /* CustomNavigationBar.swift */,
+				6B3737D41FA632940009CBA5 /* JournalEntryCell.swift */,
+				6B3737D51FA632940009CBA5 /* JournalEntryDateCell.swift */,
+				6B3737D61FA632940009CBA5 /* MessageCell.swift */,
+				6B3737D71FA632940009CBA5 /* WeatherDetailCell.swift */,
+				6B3737D81FA632940009CBA5 /* WeatherSummaryCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E2CDE01DC7B4CF00A9E0F4 /* Assets.xcassets in Resources */,
-				29E2CDF51DC7B4E300A9E0F4 /* LaunchScreen.storyboard in Resources */,
-				29E2CDE21DC7B4CF00A9E0F4 /* OCRAStd.otf in Resources */,
+				6B3737E41FA632940009CBA5 /* OCRAStd.otf in Resources */,
+				6B3737E31FA632940009CBA5 /* Info.plist in Resources */,
+				6B3737E11FA632940009CBA5 /* Assets.xcassets in Resources */,
+				6B3737E21FA632940009CBA5 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,13 +296,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marslink-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		481C720996385C8613F56067 /* [CP] Copy Pods Resources */ = {
@@ -308,9 +329,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Marslink/Pods-Marslink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,40 +350,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E2CDEF1DC7B4CF00A9E0F4 /* JournalEntryDateCell.swift in Sources */,
-				29E2CDE61DC7B4CF00A9E0F4 /* JournalLoader.swift in Sources */,
-				29E2CDE81DC7B4CF00A9E0F4 /* TextSize.swift in Sources */,
-				29E2CDDB1DC7B4CF00A9E0F4 /* JournalEntry.swift in Sources */,
-				2997D4951DF5EA51005A5DD2 /* NSObject+IGListDiffable.swift in Sources */,
-				6B7621661F48A74F00EAD081 /* FeedViewController.swift in Sources */,
-				29E2CDDC1DC7B4CF00A9E0F4 /* Message.swift in Sources */,
-				29E2CDEA1DC7B4CF00A9E0F4 /* WxScanner.swift in Sources */,
-				29E2CDE71DC7B4CF00A9E0F4 /* Pathfinder.swift in Sources */,
-				29E2CDDE1DC7B4CF00A9E0F4 /* User.swift in Sources */,
-				29E2CDEE1DC7B4CF00A9E0F4 /* JournalEntryCell.swift in Sources */,
-				29E2CDF21DC7B4CF00A9E0F4 /* WeatherSummaryCell.swift in Sources */,
-				29E2CDD81DC7B4CF00A9E0F4 /* AppDelegate.swift in Sources */,
-				6B7621681F48A9A900EAD081 /* JournalSectionController.swift in Sources */,
-				29E2CDDD1DC7B4CF00A9E0F4 /* SolFormatter.swift in Sources */,
-				29E2CDED1DC7B4CF00A9E0F4 /* CustomNavigationBar.swift in Sources */,
-				6B76216A1F48AAE900EAD081 /* MessageSectionController.swift in Sources */,
-				29E2CDDA1DC7B4CF00A9E0F4 /* DateSortable.swift in Sources */,
-				6B76216C1F48AC1800EAD081 /* WeatherSectionController.swift in Sources */,
-				29E2CDDF1DC7B4CF00A9E0F4 /* Weather.swift in Sources */,
-				29E2CDE91DC7B4CF00A9E0F4 /* Theme.swift in Sources */,
-				29E2CDEB1DC7B4CF00A9E0F4 /* ClassicFeedViewController.swift in Sources */,
-				29E2CDF01DC7B4CF00A9E0F4 /* MessageCell.swift in Sources */,
-				29E2CDF11DC7B4CF00A9E0F4 /* WeatherDetailCell.swift in Sources */,
+				6B3737E51FA632940009CBA5 /* JournalLoader.swift in Sources */,
+				6B3737EA1FA632950009CBA5 /* ClassicFeedViewController.swift in Sources */,
+				6B3737F11FA632950009CBA5 /* JournalEntryDateCell.swift in Sources */,
+				6B3737DF1FA632940009CBA5 /* User.swift in Sources */,
+				6B3737F31FA632950009CBA5 /* WeatherDetailCell.swift in Sources */,
+				6B3737E61FA632940009CBA5 /* Pathfinder.swift in Sources */,
+				6B3737DA1FA632940009CBA5 /* DateSortable.swift in Sources */,
+				6B3737E81FA632940009CBA5 /* Theme.swift in Sources */,
+				6B3737EC1FA632950009CBA5 /* JournalSectionController.swift in Sources */,
+				6B3737E71FA632940009CBA5 /* TextSize.swift in Sources */,
+				6B3737F01FA632950009CBA5 /* JournalEntryCell.swift in Sources */,
+				6B3737DC1FA632940009CBA5 /* Message.swift in Sources */,
+				6B3737ED1FA632950009CBA5 /* MessageSectionController.swift in Sources */,
+				6B3737D91FA632940009CBA5 /* AppDelegate.swift in Sources */,
+				6B3737F21FA632950009CBA5 /* MessageCell.swift in Sources */,
+				6B3737F41FA632950009CBA5 /* WeatherSummaryCell.swift in Sources */,
+				6B3737E91FA632950009CBA5 /* WxScanner.swift in Sources */,
+				6B3737EF1FA632950009CBA5 /* CustomNavigationBar.swift in Sources */,
+				6B3737EE1FA632950009CBA5 /* WeatherSectionController.swift in Sources */,
+				6B3737E01FA632940009CBA5 /* Weather.swift in Sources */,
+				6B3737DE1FA632940009CBA5 /* SolFormatter.swift in Sources */,
+				6B3737DD1FA632940009CBA5 /* NSObject+IGListDiffable.swift in Sources */,
+				6B3737DB1FA632940009CBA5 /* JournalEntry.swift in Sources */,
+				6B3737EB1FA632950009CBA5 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		29E2CDF31DC7B4E300A9E0F4 /* LaunchScreen.storyboard */ = {
+		6B3737C11FA632940009CBA5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29E2CDF41DC7B4E300A9E0F4 /* Base */,
+				6B3737C21FA632940009CBA5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -468,6 +494,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Marslink/Marslink_Bridging.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -486,6 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Marslink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Marslink/Marslink_Bridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AFnetworking.h"
 
 @interface ViewController ()
 
@@ -27,5 +28,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)request:(id)sender {
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    [manager GET:@"http://localhost:8080/TomcatTest/getNews" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    
+    }] ;
+    
+
+    [manager GET:@"https://httpbin.org/get" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }] ;
+}
 
 @end

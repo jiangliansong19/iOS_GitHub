@@ -2,12 +2,13 @@
 //  FeddViewController.swift
 //  Marslink
 //
-//  Created by 江连松 on 2017/8/20.
+//  Created by @JLS on 2017/8/20.
 //  Copyright © 2017年 Ray Wenderlich. All rights reserved.
 //
 
 import UIKit
 import IGListKit
+import MJRefresh
 
 class FeedViewController: UIViewController {
     let loader = JournalEntryLoader()
@@ -17,6 +18,12 @@ class FeedViewController: UIViewController {
     let collectionView: IGListCollectionView = {
         let view = IGListCollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
         view.backgroundColor = UIColor.black
+        view.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2, execute: {
+                view.mj_header.endRefreshing()
+            })
+        })
+        
         return view
     }()
     
@@ -32,6 +39,8 @@ class FeedViewController: UIViewController {
         
         adapter.collectionView = collectionView
         adapter.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
     

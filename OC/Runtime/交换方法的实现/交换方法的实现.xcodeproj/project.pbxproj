@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6B259EAF1EEEB5C900468385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B259EAE1EEEB5C900468385 /* main.m */; };
+		6B8D5CF91F6ACC0B00FC2D38 /* Women.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D5CF81F6ACC0B00FC2D38 /* Women.m */; };
+		6B8D5CFC1F6ACC6B00FC2D38 /* Women+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D5CFB1F6ACC6B00FC2D38 /* Women+Ext.m */; };
+		6B8D5CFF1F6ACC9700FC2D38 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D5CFE1F6ACC9700FC2D38 /* Person.m */; };
+		6B8D5D021F6ACCC000FC2D38 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D5D011F6ACCC000FC2D38 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		6B259EAB1EEEB5C900468385 /* 交换方法的实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "交换方法的实现"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B259EAE1EEEB5C900468385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B8D5CF71F6ACC0B00FC2D38 /* Women.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Women.h; sourceTree = "<group>"; };
+		6B8D5CF81F6ACC0B00FC2D38 /* Women.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Women.m; sourceTree = "<group>"; };
+		6B8D5CFA1F6ACC6B00FC2D38 /* Women+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Women+Ext.h"; sourceTree = "<group>"; };
+		6B8D5CFB1F6ACC6B00FC2D38 /* Women+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Women+Ext.m"; sourceTree = "<group>"; };
+		6B8D5CFD1F6ACC9700FC2D38 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6B8D5CFE1F6ACC9700FC2D38 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6B8D5D001F6ACCC000FC2D38 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		6B8D5D011F6ACCC000FC2D38 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				6B259EAE1EEEB5C900468385 /* main.m */,
+				6B8D5CF71F6ACC0B00FC2D38 /* Women.h */,
+				6B8D5CF81F6ACC0B00FC2D38 /* Women.m */,
+				6B8D5CFA1F6ACC6B00FC2D38 /* Women+Ext.h */,
+				6B8D5CFB1F6ACC6B00FC2D38 /* Women+Ext.m */,
+				6B8D5CFD1F6ACC9700FC2D38 /* Person.h */,
+				6B8D5CFE1F6ACC9700FC2D38 /* Person.m */,
+				6B8D5D001F6ACCC000FC2D38 /* Student.h */,
+				6B8D5D011F6ACCC000FC2D38 /* Student.m */,
 			);
 			path = "交换方法的实现";
 			sourceTree = "<group>";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8D5CF91F6ACC0B00FC2D38 /* Women.m in Sources */,
 				6B259EAF1EEEB5C900468385 /* main.m in Sources */,
+				6B8D5D021F6ACCC000FC2D38 /* Student.m in Sources */,
+				6B8D5CFF1F6ACC9700FC2D38 /* Person.m in Sources */,
+				6B8D5CFC1F6ACC6B00FC2D38 /* Women+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +272,7 @@
 				6B259EB41EEEB5C900468385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

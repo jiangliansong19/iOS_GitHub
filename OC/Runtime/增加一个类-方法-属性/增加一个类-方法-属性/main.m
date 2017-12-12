@@ -9,6 +9,23 @@
 #import <Foundation/Foundation.h>
 #import <objc/message.h>
 
+@interface Student : NSObject
+- (NSString *)greetingWithName:(NSString *)name;
+- (void)run:(double)km;
+@end
+
+@implementation Student
+- (NSString *)greetingWithName:(NSString *)name {
+    return [NSString stringWithFormat:@"Hello, %@!", name];
+
+}
+- (void)run:(double)km {
+    NSLog(@"🏃==%f",km);
+}
+@end
+
+
+
 id eatIMP(id self, SEL cmd, NSString *food) {
     NSLog(@"%@%@",NSStringFromClass([self class]),food);
     return @"1";
@@ -18,6 +35,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
+        NSLog(@"%s",method_getTypeEncoding(class_getInstanceMethod([Student class], @selector(run:))));
         
         //动态创建一个类
         Class baseClass = objc_getClass("NSObject");

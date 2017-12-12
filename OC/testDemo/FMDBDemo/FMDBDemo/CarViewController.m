@@ -38,11 +38,9 @@
         Person *person = self.dataArray[i];
         NSMutableArray *carArray =  [[DataBase sharedDataBase] getAllCarsFromPerson:person];
         [self.carArray addObject:carArray];
-     
     }
     
     self.tableView.tableFooterView = [[UIView alloc] init];
-  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,26 +50,17 @@
 
 #pragma mark - Table view data source
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0.00001;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 44;
 }
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UILabel *label =  [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     Person *person = self.dataArray[section];
-//      NSLog(@"name--%@",person.name);
     label.text = [NSString stringWithFormat:@"%@ 的所有车",person.name];
     label.font = [UIFont systemFontOfSize:13];
     label.textAlignment = NSTextAlignmentCenter;
-//    NSLog(@"label.text--%@",label.text);
-    
-    
     return label;
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -88,64 +77,36 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"carcell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"carcell"];
-        
-        
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
     NSMutableArray *carArray = self.carArray[indexPath.section];
     Car *car = carArray[indexPath.row];
-    
     cell.textLabel.text = car.brand;
-    
     cell.detailTextLabel.text = [NSString stringWithFormat:@"price: $% ld",car.price];
-    
     return cell;
-    
 }
-/**
- *  设置删除按钮
- *
- */
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (editingStyle == UITableViewCellEditingStyleDelete){
         
         NSMutableArray *carArray = self.carArray[indexPath.section];
-        
         Car *car = carArray[indexPath.row];
-        
         Person *person = self.dataArray[indexPath.section];
-        
-        
         NSLog(@"car.id--%@,own_id--%@",car.car_id,car.own_id);
-        
         [[DataBase sharedDataBase] deleteCar:car fromPerson:person];
-        
-        
-        
-        
+
         self.dataArray = [[DataBase sharedDataBase] getAllPerson];
-        
         self.carArray = [[NSMutableArray alloc] init];
-        
         for (int i = 0 ; i < self.dataArray.count; i++) {
             Person *person = self.dataArray[i];
             NSMutableArray *carArray =  [[DataBase sharedDataBase] getAllCarsFromPerson:person];
             [self.carArray addObject:carArray];
-            
         }
-
-        
-        
         [self.tableView reloadData];
-        
-        
     }
-    
-    
 }
-
 
 #pragma mark - Getter
 - (NSMutableArray *)dataArray{

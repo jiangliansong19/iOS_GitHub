@@ -1,8 +1,10 @@
 PODS:
   - IGListKit (1.0.0)
+  - MJRefresh (3.1.14.1)
 
 DEPENDENCIES:
   - IGListKit (from `https://github.com/Instagram/IGListKit.git`, branch `master`)
+  - MJRefresh
 
 EXTERNAL SOURCES:
   IGListKit:
@@ -16,7 +18,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   IGListKit: a534a917b574ec56697390ef182f125ccff2145b
+  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
 
-PODFILE CHECKSUM: 821e6140b55085368f6ab60db1c7d34ebfdca84d
+PODFILE CHECKSUM: 2e1a88b26f6ef0b14fb6078fe22e1e73896e2b84
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.4.0.beta.1

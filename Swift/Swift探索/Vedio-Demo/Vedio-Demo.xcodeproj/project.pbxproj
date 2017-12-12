@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B7C2B271F77152B00FA119E /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7C2B261F77152B00FA119E /* Test.xib */; };
 		6BB2A78C1ED699E200096760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2A78B1ED699E200096760 /* AppDelegate.swift */; };
 		6BB2A78E1ED699E200096760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2A78D1ED699E200096760 /* ViewController.swift */; };
 		6BB2A7911ED699E200096760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2A78F1ED699E200096760 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B7C2B261F77152B00FA119E /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		6BB2A7881ED699E200096760 /* Vedio-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vedio-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB2A78B1ED699E200096760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BB2A78D1ED699E200096760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				6BB2A7971ED699E200096760 /* Info.plist */,
 				6BB2A7A01ED6A73400096760 /* MP-ViewController.swift */,
 				6BB2A7A81ED6C3BD00096760 /* AV-ViewController.swift */,
+				6B7C2B261F77152B00FA119E /* Test.xib */,
 			);
 			path = "Vedio-Demo";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB2A7A71ED6BE8A00096760 /* 泡沫.mp4 in Resources */,
+				6B7C2B271F77152B00FA119E /* Test.xib in Resources */,
 				6BB2A79F1ED69BF500096760 /* 一字马.mp4 in Resources */,
 				6BB2A7961ED699E200096760 /* LaunchScreen.storyboard in Resources */,
 				6BB2A7931ED699E200096760 /* Assets.xcassets in Resources */,

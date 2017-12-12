@@ -11,3 +11,8 @@
 @implementation Person
 
 @end
+
+
+@implementation Student
+
+@end

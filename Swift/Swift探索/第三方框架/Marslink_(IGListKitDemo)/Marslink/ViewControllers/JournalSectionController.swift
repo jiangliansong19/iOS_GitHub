@@ -2,7 +2,7 @@
 //  JournalSectionController.swift
 //  Marslink
 //
-//  Created by 江连松 on 2017/8/20.
+//  Created by @JLS on 2017/8/20.
 //  Copyright © 2017年 Ray Wenderlich. All rights reserved.
 //
 
