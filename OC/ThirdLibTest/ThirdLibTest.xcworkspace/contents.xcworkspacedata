@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MainProject/MainProject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:KVO/KVO.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JSON-Model-Demo/JSON-Model-Demo.xcodeproj">
+   </FileRef>
+</Workspace>
