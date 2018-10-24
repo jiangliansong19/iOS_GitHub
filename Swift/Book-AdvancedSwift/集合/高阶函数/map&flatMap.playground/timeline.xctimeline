@@ -3,17 +3,32 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=1800&amp;EndingColumnNumber=14&amp;EndingLineNumber=7&amp;StartingColumnNumber=5&amp;StartingLineNumber=7&amp;Timestamp=518704060.919043"
+         documentLocation = "file:///Users/jiangliansong/Documents/iOS_GitHub/iOS_GitHub/Swift/Book-AdvancedSwift/%E9%9B%86%E5%90%88/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/map&amp;flatMap.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=1822&amp;EndingColumnNumber=0&amp;EndingLineNumber=77&amp;StartingColumnNumber=0&amp;StartingLineNumber=77&amp;Timestamp=560099932.340278"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=1&amp;CharacterRangeLoc=661&amp;EndingColumnNumber=10&amp;EndingLineNumber=27&amp;StartingColumnNumber=1&amp;StartingLineNumber=27&amp;Timestamp=518704060.919244"
+         documentLocation = "file:///Users/jiangliansong/Documents/iOS_GitHub/iOS_GitHub/Swift/Book-AdvancedSwift/%E9%9B%86%E5%90%88/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/map&amp;flatMap.playground#CharacterRangeLen=1&amp;CharacterRangeLoc=683&amp;EndingColumnNumber=0&amp;EndingLineNumber=30&amp;StartingColumnNumber=0&amp;StartingLineNumber=29&amp;Timestamp=560099932.340466"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=1800&amp;EndingColumnNumber=51&amp;EndingLineNumber=76&amp;StartingColumnNumber=41&amp;StartingLineNumber=76&amp;Timestamp=518704060.919394"
+         documentLocation = "file:///Users/jiangliansong/Documents/iOS_GitHub/iOS_GitHub/Swift/Book-AdvancedSwift/%E9%9B%86%E5%90%88/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/map&amp;flatMap.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=1822&amp;EndingColumnNumber=0&amp;EndingLineNumber=77&amp;StartingColumnNumber=0&amp;StartingLineNumber=77&amp;Timestamp=560099932.340633"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jiangliansong/Documents/iOS_GitHub/iOS_GitHub/Swift/Book-AdvancedSwift/%E9%9B%86%E5%90%88/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/map&amp;flatMap.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=239&amp;EndingColumnNumber=0&amp;EndingLineNumber=9&amp;StartingColumnNumber=1&amp;StartingLineNumber=8&amp;Timestamp=560099932.340771"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jiangliansong/Documents/iOS_GitHub/iOS_GitHub/Swift/Book-AdvancedSwift/%E9%9B%86%E5%90%88/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/map&amp;flatMap.playground#CharacterRangeLen=9&amp;CharacterRangeLoc=245&amp;EndingColumnNumber=0&amp;EndingLineNumber=10&amp;StartingColumnNumber=1&amp;StartingLineNumber=9&amp;Timestamp=560099932.340941"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jiangliansong/Documents/iOS_GitHub/iOS_GitHub/Swift/Book-AdvancedSwift/%E9%9B%86%E5%90%88/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/map&amp;flatMap.playground#CharacterRangeLen=8&amp;CharacterRangeLoc=229&amp;EndingColumnNumber=36&amp;EndingLineNumber=7&amp;StartingColumnNumber=28&amp;StartingLineNumber=7&amp;Timestamp=560099932.341105"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

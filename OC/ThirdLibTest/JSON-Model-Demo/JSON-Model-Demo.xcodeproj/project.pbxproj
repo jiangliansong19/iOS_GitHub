@@ -14,10 +14,11 @@
 		6B259E531EDFC09F00468385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B259E521EDFC09F00468385 /* Assets.xcassets */; };
 		6B259E561EDFC09F00468385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B259E541EDFC09F00468385 /* LaunchScreen.storyboard */; };
 		6B259E621EDFC52900468385 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B259E611EDFC52900468385 /* Person.m */; };
-		6B259E651EDFC56100468385 /* NSObject+ToJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B259E641EDFC56100468385 /* NSObject+ToJSON.m */; };
-		6B259E681EDFC70400468385 /* NSObject+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B259E671EDFC70400468385 /* NSObject+ToString.m */; };
 		6B4723CB1FEAB6E3000BC816 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4723CA1FEAB6E3000BC816 /* JSONModel.m */; };
 		6B4723CC1FEAB6E3000BC816 /* JSONModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B4723C91FEAB6E3000BC816 /* JSONModel.h */; };
+		6BB1AFAF1FF16623008BFF30 /* NSObject+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB1AFAB1FF16622008BFF30 /* NSObject+ToString.m */; };
+		6BB1AFB01FF16623008BFF30 /* NSObject+ToJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB1AFAD1FF16623008BFF30 /* NSObject+ToJSON.m */; };
+		6BB1AFBC1FF168AD008BFF30 /* girl.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6BB1AFBB1FF168AD008BFF30 /* girl.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,13 +57,16 @@
 		6B259E571EDFC09F00468385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B259E601EDFC52900468385 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		6B259E611EDFC52900468385 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		6B259E631EDFC56100468385 /* NSObject+ToJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ToJSON.h"; sourceTree = "<group>"; };
-		6B259E641EDFC56100468385 /* NSObject+ToJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ToJSON.m"; sourceTree = "<group>"; };
-		6B259E661EDFC70400468385 /* NSObject+ToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ToString.h"; sourceTree = "<group>"; };
-		6B259E671EDFC70400468385 /* NSObject+ToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ToString.m"; sourceTree = "<group>"; };
 		6B4723C71FEAB6E3000BC816 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4723C91FEAB6E3000BC816 /* JSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
 		6B4723CA1FEAB6E3000BC816 /* JSONModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		6BB1AFAB1FF16622008BFF30 /* NSObject+ToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ToString.m"; sourceTree = "<group>"; };
+		6BB1AFAC1FF16622008BFF30 /* NSObject+ToJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ToJSON.h"; sourceTree = "<group>"; };
+		6BB1AFAD1FF16623008BFF30 /* NSObject+ToJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ToJSON.m"; sourceTree = "<group>"; };
+		6BB1AFAE1FF16623008BFF30 /* NSObject+ToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ToString.h"; sourceTree = "<group>"; };
+		6BB1AFB51FF16860008BFF30 /* JMResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB1AFB71FF16860008BFF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB1AFBB1FF168AD008BFF30 /* girl.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BB1AFB21FF16860008BFF30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +99,7 @@
 			children = (
 				6B259E451EDFC09F00468385 /* JSON-Model-Demo */,
 				6B4723C81FEAB6E3000BC816 /* JSONModel */,
+				6BB1AFB61FF16860008BFF30 /* JMResource */,
 				6B259E441EDFC09F00468385 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +109,7 @@
 			children = (
 				6B259E431EDFC09F00468385 /* JSON-Model-Demo.app */,
 				6B4723C71FEAB6E3000BC816 /* libJSONModel.a */,
+				6BB1AFB51FF16860008BFF30 /* JMResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,10 +128,6 @@
 				6B259E461EDFC09F00468385 /* Supporting Files */,
 				6B259E601EDFC52900468385 /* Person.h */,
 				6B259E611EDFC52900468385 /* Person.m */,
-				6B259E631EDFC56100468385 /* NSObject+ToJSON.h */,
-				6B259E641EDFC56100468385 /* NSObject+ToJSON.m */,
-				6B259E661EDFC70400468385 /* NSObject+ToString.h */,
-				6B259E671EDFC70400468385 /* NSObject+ToString.m */,
 			);
 			path = "JSON-Model-Demo";
 			sourceTree = "<group>";
@@ -134,10 +143,23 @@
 		6B4723C81FEAB6E3000BC816 /* JSONModel */ = {
 			isa = PBXGroup;
 			children = (
+				6BB1AFAC1FF16622008BFF30 /* NSObject+ToJSON.h */,
+				6BB1AFAD1FF16623008BFF30 /* NSObject+ToJSON.m */,
+				6BB1AFAE1FF16623008BFF30 /* NSObject+ToString.h */,
+				6BB1AFAB1FF16622008BFF30 /* NSObject+ToString.m */,
 				6B4723C91FEAB6E3000BC816 /* JSONModel.h */,
 				6B4723CA1FEAB6E3000BC816 /* JSONModel.m */,
 			);
 			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		6BB1AFB61FF16860008BFF30 /* JMResource */ = {
+			isa = PBXGroup;
+			children = (
+				6BB1AFBB1FF168AD008BFF30 /* girl.jpeg */,
+				6BB1AFB71FF16860008BFF30 /* Info.plist */,
+			);
+			path = JMResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +200,23 @@
 			productReference = 6B4723C71FEAB6E3000BC816 /* libJSONModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		6BB1AFB41FF16860008BFF30 /* JMResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB1AFB81FF16860008BFF30 /* Build configuration list for PBXNativeTarget "JMResource" */;
+			buildPhases = (
+				6BB1AFB11FF16860008BFF30 /* Sources */,
+				6BB1AFB21FF16860008BFF30 /* Frameworks */,
+				6BB1AFB31FF16860008BFF30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMResource;
+			productName = JMResource;
+			productReference = 6BB1AFB51FF16860008BFF30 /* JMResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +232,11 @@
 					};
 					6B4723C61FEAB6E3000BC816 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6BB1AFB41FF16860008BFF30 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = MHAGAL73YZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -212,6 +256,7 @@
 			targets = (
 				6B259E421EDFC09F00468385 /* JSON-Model-Demo */,
 				6B4723C61FEAB6E3000BC816 /* JSONModel */,
+				6BB1AFB41FF16860008BFF30 /* JMResource */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +272,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BB1AFB31FF16860008BFF30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB1AFBC1FF168AD008BFF30 /* girl.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,8 +290,6 @@
 				6B259E4E1EDFC09F00468385 /* ViewController.m in Sources */,
 				6B259E621EDFC52900468385 /* Person.m in Sources */,
 				6B259E4B1EDFC09F00468385 /* AppDelegate.m in Sources */,
-				6B259E681EDFC70400468385 /* NSObject+ToString.m in Sources */,
-				6B259E651EDFC56100468385 /* NSObject+ToJSON.m in Sources */,
 				6B259E481EDFC09F00468385 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +299,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4723CB1FEAB6E3000BC816 /* JSONModel.m in Sources */,
+				6BB1AFB01FF16623008BFF30 /* NSObject+ToJSON.m in Sources */,
+				6BB1AFAF1FF16623008BFF30 /* NSObject+ToString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB1AFB11FF16860008BFF30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +493,60 @@
 			};
 			name = Release;
 		};
+		6BB1AFB91FF16860008BFF30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MHAGAL73YZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = JMResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = JMResource.JMResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos11.2;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6BB1AFBA1FF16860008BFF30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MHAGAL73YZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = JMResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = JMResource.JMResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos11.2;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,6 +573,15 @@
 			buildConfigurations = (
 				6B4723CE1FEAB6E3000BC816 /* Debug */,
 				6B4723CF1FEAB6E3000BC816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB1AFB81FF16860008BFF30 /* Build configuration list for PBXNativeTarget "JMResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB1AFB91FF16860008BFF30 /* Debug */,
+				6BB1AFBA1FF16860008BFF30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

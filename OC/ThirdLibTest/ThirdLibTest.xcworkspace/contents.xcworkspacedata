@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SVProgressHUD-Demo/SVProgressHUD-Demo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JKDBModel-master/JKDBModel.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FMDBTest/FMDBTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MainProject/MainProject.xcodeproj">
    </FileRef>
    <FileRef

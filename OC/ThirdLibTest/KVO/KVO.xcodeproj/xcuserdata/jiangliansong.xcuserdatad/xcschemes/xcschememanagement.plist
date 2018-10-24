@@ -11,9 +11,19 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>KVOResource.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6B47241F1FEC73F5000BC816</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6BDF78B51EA4B7DA00716FA3</key>
 		<dict>
 			<key>primary</key>

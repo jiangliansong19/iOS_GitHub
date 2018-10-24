@@ -12,13 +12,16 @@
 		6B4723E41FEAB84D000BC816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4723E21FEAB84D000BC816 /* Main.storyboard */; };
 		6B4723E71FEAB84D000BC816 /* MainProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B4723E51FEAB84D000BC816 /* MainProject.xcdatamodeld */; };
 		6B4723E91FEAB84D000BC816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4723E81FEAB84D000BC816 /* Assets.xcassets */; };
-		6B4723EC1FEAB84D000BC816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4723EA1FEAB84D000BC816 /* LaunchScreen.storyboard */; };
 		6B4723EF1FEAB84D000BC816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4723EE1FEAB84D000BC816 /* main.m */; };
 		6B4723F91FEAB84D000BC816 /* MainProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4723F81FEAB84D000BC816 /* MainProjectTests.m */; };
 		6B4724041FEAB84D000BC816 /* MainProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4724031FEAB84D000BC816 /* MainProjectUITests.m */; };
 		6B4724151FEABA4D000BC816 /* ShortName.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4724141FEABA4D000BC816 /* ShortName.m */; };
 		6B4724181FEABD4D000BC816 /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4724171FEABD4D000BC816 /* KVOTestViewController.m */; };
 		6B47241A1FEB2780000BC816 /* project.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6B4724191FEB2780000BC816 /* project.sh */; };
+		6B8186AB1FF4008F00C911D7 /* JKDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8186AA1FF4008F00C911D7 /* JKDBViewController.m */; };
+		6B8187091FF760FF00C911D7 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8187081FF760FF00C911D7 /* SVProgressHUD.framework */; };
+		6BB1AFA71FF160A2008BFF30 /* JsonModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB1AFA61FF160A2008BFF30 /* JsonModelViewController.m */; };
+		6BB1AFA91FF1628B008BFF30 /* libJSONModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB1AFAA1FF1628B008BFF30 /* libJSONModel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,6 @@
 		6B4723E31FEAB84D000BC816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B4723E61FEAB84D000BC816 /* MainProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MainProject.xcdatamodel; sourceTree = "<group>"; };
 		6B4723E81FEAB84D000BC816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6B4723EB1FEAB84D000BC816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B4723ED1FEAB84D000BC816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B4723EE1FEAB84D000BC816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B4723F41FEAB84D000BC816 /* MainProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,12 @@
 		6B4724161FEABD4D000BC816 /* KVOTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestViewController.h; sourceTree = "<group>"; };
 		6B4724171FEABD4D000BC816 /* KVOTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		6B4724191FEB2780000BC816 /* project.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = project.sh; sourceTree = "<group>"; };
+		6B8186A91FF4008F00C911D7 /* JKDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKDBViewController.h; sourceTree = "<group>"; };
+		6B8186AA1FF4008F00C911D7 /* JKDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKDBViewController.m; sourceTree = "<group>"; };
+		6B8187081FF760FF00C911D7 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = "../SVProgressHUD-Demo/FrameworkProduct/SVProgressHUD.framework"; sourceTree = "<group>"; };
+		6BB1AFA51FF160A2008BFF30 /* JsonModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonModelViewController.h; sourceTree = "<group>"; };
+		6BB1AFA61FF160A2008BFF30 /* JsonModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonModelViewController.m; sourceTree = "<group>"; };
+		6BB1AFAA1FF1628B008BFF30 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8187091FF760FF00C911D7 /* SVProgressHUD.framework in Frameworks */,
+				6BB1AFA91FF1628B008BFF30 /* libJSONModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,7 @@
 				6B4723F71FEAB84D000BC816 /* MainProjectTests */,
 				6B4724021FEAB84D000BC816 /* MainProjectUITests */,
 				6B4723DA1FEAB84D000BC816 /* Products */,
+				6BB1AFA81FF1628B008BFF30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,12 +130,15 @@
 				6B4723E01FEAB84D000BC816 /* ViewController.m */,
 				6B4723E21FEAB84D000BC816 /* Main.storyboard */,
 				6B4723E81FEAB84D000BC816 /* Assets.xcassets */,
-				6B4723EA1FEAB84D000BC816 /* LaunchScreen.storyboard */,
 				6B4723ED1FEAB84D000BC816 /* Info.plist */,
 				6B4723EE1FEAB84D000BC816 /* main.m */,
 				6B4723E51FEAB84D000BC816 /* MainProject.xcdatamodeld */,
 				6B4724161FEABD4D000BC816 /* KVOTestViewController.h */,
 				6B4724171FEABD4D000BC816 /* KVOTestViewController.m */,
+				6BB1AFA51FF160A2008BFF30 /* JsonModelViewController.h */,
+				6BB1AFA61FF160A2008BFF30 /* JsonModelViewController.m */,
+				6B8186A91FF4008F00C911D7 /* JKDBViewController.h */,
+				6B8186AA1FF4008F00C911D7 /* JKDBViewController.m */,
 			);
 			path = MainProject;
 			sourceTree = "<group>";
@@ -156,6 +170,15 @@
 				6B4724191FEB2780000BC816 /* project.sh */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6BB1AFA81FF1628B008BFF30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B8187081FF760FF00C911D7 /* SVProgressHUD.framework */,
+				6BB1AFAA1FF1628B008BFF30 /* libJSONModel.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B4723EC1FEAB84D000BC816 /* LaunchScreen.storyboard in Resources */,
 				6B4723E91FEAB84D000BC816 /* Assets.xcassets in Resources */,
 				6B47241A1FEB2780000BC816 /* project.sh in Resources */,
 				6B4723E41FEAB84D000BC816 /* Main.storyboard in Resources */,
@@ -310,11 +332,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4723E71FEAB84D000BC816 /* MainProject.xcdatamodeld in Sources */,
+				6B8186AB1FF4008F00C911D7 /* JKDBViewController.m in Sources */,
 				6B4724151FEABA4D000BC816 /* ShortName.m in Sources */,
 				6B4723E11FEAB84D000BC816 /* ViewController.m in Sources */,
 				6B4723EF1FEAB84D000BC816 /* main.m in Sources */,
 				6B4723DE1FEAB84D000BC816 /* AppDelegate.m in Sources */,
 				6B4724181FEABD4D000BC816 /* KVOTestViewController.m in Sources */,
+				6BB1AFA71FF160A2008BFF30 /* JsonModelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,14 +380,6 @@
 				6B4723E31FEAB84D000BC816 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6B4723EA1FEAB84D000BC816 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B4723EB1FEAB84D000BC816 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -478,7 +494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZV446DQTU;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../SVProgressHUD-Demo/Products\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MainProject/Utilities/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../SVProgressHUD-Demo/Products/SVProgressHUD.framework/Headers\"";
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLS.MainProject;
@@ -492,7 +511,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZV446DQTU;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../SVProgressHUD-Demo/Products\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MainProject/Utilities/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../SVProgressHUD-Demo/Products/SVProgressHUD.framework/Headers\"";
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLS.MainProject;

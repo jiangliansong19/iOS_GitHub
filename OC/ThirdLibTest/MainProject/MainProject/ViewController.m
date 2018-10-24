@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SVProgressHUD.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) IBOutlet UITableView *tableView;
@@ -47,7 +48,7 @@
             [self.navigationController pushViewController:InstantiateViewController(@"Main",@"KVOTestViewController") animated:YES];
         }break;
         case 1: {
-            
+            [self.navigationController pushViewController:InstantiateViewController(@"Main",@"JsonModelViewController") animated:YES];
         }break;
         default:
             break;
