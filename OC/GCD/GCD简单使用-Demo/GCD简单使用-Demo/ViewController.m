@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    
 
     //创建并行异步的线程。global_queue默认为并发。。
     dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);

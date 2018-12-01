@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="164" y="205" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0fh-Cz-uZ2"/>
-                                    <constraint firstAttribute="width" constant="46" id="P5M-bS-gcZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="P5M-bS-gcZ"/>
                                 </constraints>
                                 <state key="normal" title="notify"/>
                                 <connections>
@@ -35,7 +35,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6s-QX-1XB">
                                 <rect key="frame" x="115.5" y="273" width="144" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="144" id="aKH-v9-dPE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="aKH-v9-dPE"/>
                                     <constraint firstAttribute="height" constant="30" id="q15-YS-8y7"/>
                                 </constraints>
                                 <state key="normal" title="enterGroup"/>
@@ -44,9 +44,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anM-TM-HIh">
-                                <rect key="frame" x="126" y="334" width="122" height="30"/>
+                                <rect key="frame" x="126" y="403" width="122" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="122" id="Wt3-av-CLG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="122" id="Wt3-av-CLG"/>
                                     <constraint firstAttribute="height" constant="30" id="u0c-8k-emP"/>
                                 </constraints>
                                 <state key="normal" title="waitGroup"/>
@@ -54,14 +54,40 @@
                                     <action selector="watiGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eCh-g0-KoP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfQ-gd-pUB">
+                                <rect key="frame" x="126" y="469" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PPP-PD-L98"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="122" id="Zgk-7z-0J6"/>
+                                </constraints>
+                                <state key="normal" title="applyTest"/>
+                                <connections>
+                                    <action selector="applyTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1iX-zN-s9T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzY-un-vXV">
+                                <rect key="frame" x="115" y="338" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z0H-Jm-8Ma"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="fXx-h8-v4l"/>
+                                </constraints>
+                                <state key="normal" title="enterGroup2"/>
+                                <connections>
+                                    <action selector="enterGroup2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxC-AA-RyR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="anM-TM-HIh" firstAttribute="top" secondItem="P6s-QX-1XB" secondAttribute="bottom" constant="31" id="Dhk-P8-2g3"/>
+                            <constraint firstItem="anM-TM-HIh" firstAttribute="top" secondItem="P6s-QX-1XB" secondAttribute="bottom" constant="100" id="Dhk-P8-2g3"/>
                             <constraint firstItem="P6s-QX-1XB" firstAttribute="top" secondItem="6CL-Wl-Doy" secondAttribute="bottom" constant="38" id="EH1-Ar-z40"/>
+                            <constraint firstItem="wzY-un-vXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZU-73-RTQ"/>
                             <constraint firstItem="P6s-QX-1XB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTq-h6-Bo7"/>
+                            <constraint firstItem="wzY-un-vXV" firstAttribute="top" secondItem="P6s-QX-1XB" secondAttribute="bottom" constant="35" id="Llw-bR-WU0"/>
+                            <constraint firstItem="TfQ-gd-pUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NDS-wh-8hn"/>
                             <constraint firstItem="6CL-Wl-Doy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qjd-d3-yGQ"/>
                             <constraint firstItem="6CL-Wl-Doy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="185" id="aoU-c3-dHX"/>
+                            <constraint firstItem="TfQ-gd-pUB" firstAttribute="top" secondItem="anM-TM-HIh" secondAttribute="bottom" constant="36" id="eI3-4V-3Zc"/>
                             <constraint firstItem="anM-TM-HIh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pft-TO-1LJ"/>
                         </constraints>
                     </view>
