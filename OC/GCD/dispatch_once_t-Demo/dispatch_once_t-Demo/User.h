@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface User : NSObject
-
-+ (User *)sharedInstance;
-
-- (void)deleteUser;
-
 @property (nonatomic, strong) NSString *job;
-
++ (User *)sharedInstance;
+- (void)deleteUser;
 @end

@@ -18,8 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    [User sharedInstance].job = @"iOS开发工程师";
+    [User sharedInstance].job = @"iOS developer";
     NSLog(@"%@====%@",[User sharedInstance],[User sharedInstance].job);
     
     //问题来了。。。如何将单例数据清空。(比如切换用户，当前的user需要清空数据）
@@ -29,16 +28,9 @@
     NSLog(@"%@====%@",[User sharedInstance],[User sharedInstance].job);
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

@@ -107,8 +107,19 @@
         NSLog(@"end task3");
         dispatch_group_leave(group);
     });
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        NSLog(@"switch to mainQueue");
+    
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_notify(group, queue, ^{
+        dispatch_async(queue, ^{
+            NSLog(@"start task4");
+            sleep(3);
+            NSLog(@"end task4");
+        });
+        dispatch_async(queue, ^{
+            NSLog(@"start task5");
+            sleep(3);
+            NSLog(@"end task5");
+        });
     });
 }
 

@@ -27,28 +27,79 @@
 
 
 //案例：a,b，并发，都执行完毕后，开始执行c。可以用group，可以用信号。。还可以用barrier
-- (IBAction)test:(id)sender
+- (IBAction)testbarrierSync:(id)sender
 {
-    __block int a,b;
-    dispatch_queue_t queue = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);
+    NSLog(@"start");
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(queue, ^{
-        sleep(3);
-        a = 3;
-        NSLog(@"a = %d",a);
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---i = %d",[NSThread currentThread], i);
+        }
     });
     dispatch_async(queue, ^{
-        sleep(4);
-        b = 4;
-        NSLog(@"b = %d",b);
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---j = %d",[NSThread currentThread], i);
+        }
     });
     dispatch_barrier_sync(queue, ^{
-        NSLog(@"a + b = %d",a+b);
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@dispatch_barrier_sync-k = %d",[NSThread currentThread], i);
+        }
     });
-    
+    NSLog(@"mainQueue");
+    dispatch_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---m = %d",[NSThread currentThread], i);
+        }
+    });
+    dispatch_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---n = %d",[NSThread currentThread], i);
+        }
+    });
 }
 
-void add(int a, int b) {
-    NSLog(@"a + b = %d",b +b);
+- (IBAction)testbarrierAsync:(id)sender
+{
+    NSLog(@"start");
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---i = %d",[NSThread currentThread], i);
+        }
+    });
+    dispatch_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---j = %d",[NSThread currentThread], i);
+        }
+    });
+    dispatch_barrier_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@dispatch_barrier_async-k = %d",[NSThread currentThread], i);
+        }
+    });
+    NSLog(@"mainQueue");
+    dispatch_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---m = %d",[NSThread currentThread], i);
+        }
+    });
+    dispatch_async(queue, ^{
+        for (int i=0; i<3; i++) {
+            sleep(1);
+            NSLog(@"%@---n = %d",[NSThread currentThread], i);
+        }
+    });
+    
 }
 
 @end

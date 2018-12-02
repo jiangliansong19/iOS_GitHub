@@ -9,12 +9,12 @@
 #import "User.h"
 
 static dispatch_once_t user_onceToken;
-
 @implementation User
-
 + (User *)sharedInstance {
     static User *user = nil;
+    NSLog(@"before: %ld--%p",user_onceToken, &user_onceToken);
     dispatch_once(&user_onceToken, ^{
+        NSLog(@"after: %ld--%p",user_onceToken, &user_onceToken);
         user = [[User alloc]init];
     });
     return user;
@@ -23,5 +23,4 @@ static dispatch_once_t user_onceToken;
 - (void)deleteUser {
     user_onceToken = 0;
 }
-
 @end

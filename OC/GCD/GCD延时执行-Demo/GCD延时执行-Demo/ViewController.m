@@ -35,7 +35,7 @@
 
 
 void goShopping() {
-    NSLog(@"马上618了，一起购物吧");
+    NSLog(@"Yeah.Let's go shopping!");
 }
 
 @end
