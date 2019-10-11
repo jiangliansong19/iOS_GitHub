@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSObject *obj = [[NSObject alloc] init];
+    __weak NSObject *weakObj = obj;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -17,16 +17,28 @@
 @end
 
 @interface Person(Name)
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
+@property (atomic, copy) NSString *lastName;
+@property (atomic, strong) NSMutableArray *children;
+@property (nonatomic, assign) float salary;
+@property (nonatomic, weak) id staff;
 @end
 
 @implementation Person(name)
 
 - (void)setName:(NSString *)name {
-    objc_setAssociatedObject(self, @selector(name), name, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(name), name, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)name {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setLastName:(NSString *)lastName {
+    objc_setAssociatedObject(self, @selector(lastName), lastName, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSString *)lastName {
     return objc_getAssociatedObject(self, _cmd);
 }
 
@@ -39,10 +51,14 @@ int main(int argc, const char * argv[]) {
         
         Person *per = [[Person alloc]init];
         per.age = 20;
-        per.name = @"jiangliansong";
-        NSLog(@"%@ is %d old",per.name, per.age);
+        per.name = @"liuhulang";
+        per.lastName = @"hulang";
         
-        class_getInstanceMethod([Person class], <#SEL  _Nonnull name#>)
+        NSLog(@"per.age = %d", per.age);
+        NSLog(@"per.name = %@", per.name);
+        NSLog(@"per.lastName = %@", per.lastName);
+        
+        
     }
     return 0;
 }

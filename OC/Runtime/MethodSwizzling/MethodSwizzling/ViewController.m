@@ -20,6 +20,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.view.backgroundColor = [UIColor orangeColor];
+    
+    NSArray *lists = @[@"1", @"2"];
+    NSLog(@"---%@", [lists objectAtIndex:3]);
+    NSLog(@"+++%@", lists[4]);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

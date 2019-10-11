@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B34D44822F8EFAA009F202F /* NSArray+Index.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B34D44722F8EFAA009F202F /* NSArray+Index.m */; };
 		6B559FDD1EEFB54100B2B61B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B559FDC1EEFB54100B2B61B /* main.m */; };
 		6B559FE01EEFB54100B2B61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B559FDF1EEFB54100B2B61B /* AppDelegate.m */; };
 		6B559FE31EEFB54100B2B61B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B559FE21EEFB54100B2B61B /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B34D44622F8EFAA009F202F /* NSArray+Index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Index.h"; sourceTree = "<group>"; };
+		6B34D44722F8EFAA009F202F /* NSArray+Index.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Index.m"; sourceTree = "<group>"; };
 		6B559FD81EEFB54100B2B61B /* MethodSwizzling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MethodSwizzling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B559FDC1EEFB54100B2B61B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B559FDE1EEFB54100B2B61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				6B559FDB1EEFB54100B2B61B /* Supporting Files */,
 				6B559FF21EEFB57100B2B61B /* UIViewController+Hook.h */,
 				6B559FF31EEFB57100B2B61B /* UIViewController+Hook.m */,
+				6B34D44622F8EFAA009F202F /* NSArray+Index.h */,
+				6B34D44722F8EFAA009F202F /* NSArray+Index.m */,
 			);
 			path = MethodSwizzling;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				6B559FE31EEFB54100B2B61B /* ViewController.m in Sources */,
 				6B559FE01EEFB54100B2B61B /* AppDelegate.m in Sources */,
 				6B559FDD1EEFB54100B2B61B /* main.m in Sources */,
+				6B34D44822F8EFAA009F202F /* NSArray+Index.m in Sources */,
 				6B559FF71EEFBBB400B2B61B /* SonViewController.m in Sources */,
 				6B559FF41EEFB57100B2B61B /* UIViewController+Hook.m in Sources */,
 			);
@@ -321,6 +327,7 @@
 				6B559FF11EEFB54100B2B61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

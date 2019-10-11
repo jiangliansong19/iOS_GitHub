@@ -25,6 +25,11 @@
 
 @end
 
+/*
+方法的查找过程：
+1.方法缓存
+2.
+*/
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -46,6 +51,10 @@ int main(int argc, const char * argv[]) {
         objc_msgSend(per, @selector(eat));
         objc_msgSend(per, @selector(drink:), @"农夫山泉");
         objc_msgSend(per, sel_registerName("drink:"), @"健力宝");
+        
+        //方式四：直接跳过OC的方法调用，直接执行IMP
+        IMP eat = method_getImplementation(class_getInstanceMethod(Person.class, @selector(eat)));
+        eat(Person.class, @selector(eat));
         
         
         //创建对象

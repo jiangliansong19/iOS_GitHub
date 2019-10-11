@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B259EC21EEEE15100468385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B259EC11EEEE15100468385 /* main.m */; };
+		6B34D45E22FB989E009F202F /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B34D45C22FB989E009F202F /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6B259EBE1EEEE15100468385 /* 增加一个类-方法-属性 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "增加一个类-方法-属性"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B259EC11EEEE15100468385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B34D45C22FB989E009F202F /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		6B34D45D22FB989E009F202F /* test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6B259EC11EEEE15100468385 /* main.m */,
+				6B34D45C22FB989E009F202F /* test.cpp */,
+				6B34D45D22FB989E009F202F /* test.hpp */,
 			);
 			path = "增加一个类-方法-属性";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B259EC21EEEE15100468385 /* main.m in Sources */,
+				6B34D45E22FB989E009F202F /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +256,7 @@
 				6B259EC71EEEE15100468385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
