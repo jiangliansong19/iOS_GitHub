@@ -17,12 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    dispatch_queue_t queue = dispatch_get_main_queue();
-    
 
+    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+        
+    });
+}
+
+- (void)testSyncInMainQueue {
+    
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        NSLog(@"%@", NSStringFromSelector(_cmd));
+    });
+}
+
+- (void)testInGlobalQueue {
+    
     //创建并行异步的线程。global_queue默认为并发。。
-    dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t global = dispatch_get_global_queue(0, 0);
     dispatch_async(global, ^{
         for (int i=0; i<5; i++) {
             NSLog(@"global-i===%d",i);
@@ -35,6 +46,9 @@
             sleep(1);
         }
     });
+}
+
+- (void)testAsyncInSerialQueue {
     
     //创建异步串行队列
     dispatch_queue_t myQueue = dispatch_queue_create("jiang", DISPATCH_QUEUE_SERIAL);
@@ -50,9 +64,7 @@
             sleep(1);
         }
     });
-
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

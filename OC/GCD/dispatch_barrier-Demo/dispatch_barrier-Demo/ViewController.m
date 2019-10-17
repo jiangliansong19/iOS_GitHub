@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ReadWriteObject.h"
 
 @interface ViewController ()
 
@@ -32,7 +33,7 @@
     NSLog(@"start");
     dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(queue, ^{
-        for (int i=0; i<3; i++) {
+        for (int i=0; i<2; i++) {
             sleep(1);
             NSLog(@"%@---i = %d",[NSThread currentThread], i);
         }
@@ -51,7 +52,7 @@
     });
     NSLog(@"mainQueue");
     dispatch_async(queue, ^{
-        for (int i=0; i<3; i++) {
+        for (int i=0; i<2; i++) {
             sleep(1);
             NSLog(@"%@---m = %d",[NSThread currentThread], i);
         }
@@ -75,7 +76,7 @@
         }
     });
     dispatch_async(queue, ^{
-        for (int i=0; i<3; i++) {
+        for (int i=0; i<4; i++) {
             sleep(1);
             NSLog(@"%@---j = %d",[NSThread currentThread], i);
         }

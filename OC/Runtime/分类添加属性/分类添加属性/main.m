@@ -2,7 +2,7 @@
 //  main.m
 //  分类添加属性
 //
-//  Created by 江连松 on 2017/6/13.
+//  Created by @JLS on 2017/6/13.
 //  Copyright © 2017年 JLS. All rights reserved.
 //
 

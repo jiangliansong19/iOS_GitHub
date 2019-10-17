@@ -30,26 +30,14 @@
     dispatch_group_t group = dispatch_group_create();
     dispatch_queue_t queueA = dispatch_queue_create("queueA", DISPATCH_QUEUE_CONCURRENT);
     dispatch_group_async(group, queueA, ^{
-        for (int i=0; i<3; i++) {
+        for (int i=0; i<2; i++) {
             sleep(1);
             NSLog(@"queueA i = %d", i);
         }
     });
-    dispatch_group_async(group, queueA, ^{
-        for (int j=0; j<3; j++) {
-            sleep(1);
-            NSLog(@"queueA j = %d", j);
-        }
-    });
     dispatch_queue_t queueB = dispatch_queue_create("queueB", DISPATCH_QUEUE_SERIAL);
     dispatch_group_async(group, queueB, ^{
-        for (int m=0; m<3; m++) {
-            sleep(1);
-            NSLog(@"queueB m = %d", m);
-        }
-    });
-    dispatch_group_async(group, queueB, ^{
-        for (int n=0; n<3; n++) {
+        for (int n=0; n<4; n++) {
             sleep(1);
             NSLog(@"queueB n = %d", n);
         }
@@ -136,6 +124,7 @@
             dispatch_group_leave(group);
         });
     });
+    //dispatch_time_t timeout，表示等待时间。
     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"all finished");

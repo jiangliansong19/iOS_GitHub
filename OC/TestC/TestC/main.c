@@ -24,15 +24,11 @@ struct Student{
 int main(int argc, const char * argv[]) {
     // insert code here...
 
-    struct Student stu;
-    union Word w;
-    
-    int i = 10;
-    int *p = &i;
-    
-    printf("%lu\n", sizeof(stu));
-    printf("%lu\n", sizeof(w.d));
-    printf("%lu\n", sizeof(*p));
-    
+    char *s = "hello world~~~";
+    char *begin = s;
+    for (int i = 0; i < strlen(s); i++) {
+        begin++;
+        printf("%p\n", begin);
+    }
     return 0;
 }

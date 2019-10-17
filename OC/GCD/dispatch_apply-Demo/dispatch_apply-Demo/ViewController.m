@@ -26,7 +26,7 @@
         dispatch_apply(5, dispatch_get_global_queue(0, 0), ^(size_t n) {
             for (int i=0; i<3; i++) {
                 sleep(1);
-                NSLog(@"%@ -- %d",[NSThread currentThread], i);
+                NSLog(@"%@ -- %d -- %zu",[NSThread currentThread], i, n);
             }
         });
         NSLog(@"all finished");
