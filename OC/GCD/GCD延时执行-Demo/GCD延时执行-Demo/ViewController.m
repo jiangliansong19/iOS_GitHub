@@ -25,6 +25,19 @@
     });
     
     dispatch_after_f(dispatch_time(DISPATCH_TIME_NOW, 3*NSEC_PER_SEC), dispatch_get_main_queue(), nil, &goShopping);
+    
+//    dispatch_async(dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT), ^{
+//        NSLog(@"1");
+//        [self performSelector:@selector(nslogTwo) withObject:nil afterDelay:0];
+//        NSLog(@"3");
+//    });
+    
+    dispatch_sync(dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT), ^{
+        NSLog(@"1");
+        [self performSelector:@selector(nslogTwo) withObject:nil afterDelay:0];
+        NSLog(@"3");
+    });
+    NSRunLoopCommonModes
 }
 
 
@@ -33,6 +46,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)nslogTwo {
+    NSLog(@"2");
+}
 
 void goShopping() {
     NSLog(@"Yeah.Let's go shopping!");

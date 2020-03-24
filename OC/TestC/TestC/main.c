@@ -25,10 +25,16 @@ int main(int argc, const char * argv[]) {
     // insert code here...
 
     char *s = "hello world~~~";
+    printf("%c\n", *s);
     char *begin = s;
     for (int i = 0; i < strlen(s); i++) {
         begin++;
-        printf("%p\n", begin);
+//        printf("%p\n", begin);
+//        printf("%c\n", *begin);
     }
+    
+    
+    
+    
     return 0;
 }

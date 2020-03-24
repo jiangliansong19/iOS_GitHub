@@ -6,6 +6,12 @@
 //  Copyright © 2016年 JLS. All rights reserved.
 //
 
+/*
+ 工厂：
+ 产品抽象类：
+ 子产品：
+ */
+
 import UIKit
 
 enum ShapeStyle {

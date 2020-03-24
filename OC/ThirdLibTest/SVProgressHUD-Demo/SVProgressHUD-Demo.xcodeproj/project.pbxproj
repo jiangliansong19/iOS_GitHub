@@ -294,7 +294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/SVProgressHUD-Demo/BuildFramework.sh";
+			shellScript = "${SRCROOT}/SVProgressHUD-Demo/BuildFramework.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
