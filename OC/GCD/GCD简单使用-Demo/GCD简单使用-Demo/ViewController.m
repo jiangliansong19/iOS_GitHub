@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
-        
-    });
+    [self testInGlobalQueue];
 }
 
 - (void)testSyncInMainQueue {
@@ -34,13 +32,13 @@
     
     //创建并行异步的线程。global_queue默认为并发。。
     dispatch_queue_t global = dispatch_get_global_queue(0, 0);
-    dispatch_async(global, ^{
+    dispatch_sync(global, ^{
         for (int i=0; i<5; i++) {
             NSLog(@"global-i===%d",i);
             sleep(1);
         }
     });
-    dispatch_async(global, ^{
+    dispatch_sync(global, ^{
         for (int j=0; j<5; j++) {
             NSLog(@"global-j===%d",j);
             sleep(1);
@@ -54,13 +52,31 @@
     dispatch_queue_t myQueue = dispatch_queue_create("jiang", DISPATCH_QUEUE_SERIAL);
     dispatch_async(myQueue, ^{
         for (int i=0; i<5; i++) {
-            NSLog(@"jiang-i===%d",i);
+            NSLog(@"jiang-i===%d---%@",i,[NSThread currentThread]);
             sleep(1);
         }
     });
     dispatch_async(myQueue, ^{
         for (int j=0; j<5; j++) {
-            NSLog(@"jiang-j===%d",j);
+            NSLog(@"jiang-j===%d---%@",j,[NSThread currentThread]);
+            sleep(1);
+        }
+    });
+}
+
+- (void)testAsyncInConcurrentQueue {
+    
+    //创建异步串行队列
+    dispatch_queue_t myQueue = dispatch_queue_create("jiang", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(myQueue, ^{
+        for (int i=0; i<5; i++) {
+            NSLog(@"jiang-i===%d---%@",i,[NSThread currentThread]);
+            sleep(1);
+        }
+    });
+    dispatch_async(myQueue, ^{
+        for (int j=0; j<5; j++) {
+            NSLog(@"jiang-j===%d---%@",j,[NSThread currentThread]);
             sleep(1);
         }
     });

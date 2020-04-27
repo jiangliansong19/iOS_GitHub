@@ -10,6 +10,11 @@
 
 @interface ViewController ()
 
+{
+    dispatch_semaphore_t _semaphore;
+    int _count;
+}
+
 @end
 
 @implementation ViewController
@@ -45,5 +50,29 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"任务执行完毕");
     });
+}
+
+- (IBAction)test1:(id)sender {
+    
+    _semaphore = dispatch_semaphore_create(1);
+    
+    for (int i = 0; i < 20; i++) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSLog(@"i = %d", i);
+            [self asyncTask];
+        });
+    }
+}
+
+- (void)asyncTask {
+    
+    dispatch_semaphore_wait(_semaphore, DISPATCH_TIME_FOREVER);
+    
+    _count++;
+    
+    NSLog(@"count = %d", _count);
+    
+    dispatch_semaphore_signal(_semaphore);
+    
 }
 @end
