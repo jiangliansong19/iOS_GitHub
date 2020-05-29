@@ -33,3 +33,6 @@ let count = greetings.map{ $0.contains("Hello") ? 1 : 0 }.reduce(0, +)
 count
 let count1 = greetings.reduce(0, {$0 + ($1.contains("Hello") ? 1 : 0)})
 count1
+
+
+

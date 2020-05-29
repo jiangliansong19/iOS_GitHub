@@ -3,12 +3,17 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=6&amp;CharacterRangeLoc=253&amp;EndingColumnNumber=11&amp;EndingLineNumber=16&amp;StartingColumnNumber=5&amp;StartingLineNumber=16&amp;Timestamp=495340509.879083"
+         documentLocation = "file:///Users/jiangliansong/Documents/git/iOS/Swift/Swift/String&amp;NSString.playground#CharacterRangeLen=6&amp;CharacterRangeLoc=252&amp;EndingColumnNumber=11&amp;EndingLineNumber=15&amp;StartingColumnNumber=5&amp;StartingLineNumber=15&amp;Timestamp=611716969.353606"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=13&amp;CharacterRangeLoc=442&amp;EndingColumnNumber=14&amp;EndingLineNumber=29&amp;StartingColumnNumber=1&amp;StartingLineNumber=29&amp;Timestamp=496575836.695013"
+         documentLocation = "file:///Users/jiangliansong/Documents/git/iOS/Swift/Swift/String&amp;NSString.playground#CharacterRangeLen=13&amp;CharacterRangeLoc=399&amp;EndingColumnNumber=0&amp;EndingLineNumber=27&amp;StartingColumnNumber=1&amp;StartingLineNumber=26&amp;Timestamp=611716969.353736"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jiangliansong/Documents/git/iOS/Swift/Swift/String&amp;NSString.playground#CharacterRangeLen=7&amp;CharacterRangeLoc=1667&amp;EndingColumnNumber=33&amp;EndingLineNumber=96&amp;StartingColumnNumber=26&amp;StartingLineNumber=96&amp;Timestamp=611716969.353834"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

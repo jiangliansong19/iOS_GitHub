@@ -14,10 +14,10 @@ dic["new"] = false
 dic.updateValue(18, forKey: "age")
 dic
 
-
+Int32.max
 
 var mutableDic = NSMutableDictionary(object: "jiang", forKey: "man" as NSCopying)
-
+[1:2, 2:4]
 
 struct Student {
     

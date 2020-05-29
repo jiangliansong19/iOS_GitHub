@@ -39,6 +39,7 @@ array1 = array1 + ["4", "5"]
 
 // 删
 array1.remove(at: 1)
+max(1, 1)
 array1
 
 

@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1:8088"]]];
     [self.view addSubview:webView];

@@ -318,4 +318,36 @@
 //    });
 //}
 
+- (IBAction)sqliteTest:(id)sender {
+    
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"Person.sqlite"];
+    FMDatabase *database = [FMDatabase databaseWithPath:path];
+    if (![database open]) {
+        NSLog(@"database open failure");
+    } else {
+        NSLog(@"database open success");
+    }
+    
+    BOOL isCreated = [database executeUpdate:@"create table student (name varchar(100), age int)"];
+    if (isCreated) {
+        NSLog(@"create table success");
+    } else {
+        NSLog(@"create table failure");
+    }
+    
+    BOOL isInserted = [database executeUpdate:@"insert into student (name, age) values (\"xiaohong\", 33)"];
+    if (isInserted) {
+        NSLog(@"insert table success");
+    } else {
+        NSLog(@"insert table failure");
+    }
+    
+    FMResultSet *set = [database executeQuery:@"select name from student group by name"];
+    while ([set next]) {
+        int age = [set intForColumn:@"age"];
+        NSString *name = [set objectForColumnName:@"name"];
+        NSLog(@"query result : %@, %d", name, age);
+    }
+}
+
 @end
