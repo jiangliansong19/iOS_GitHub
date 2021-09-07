@@ -41,7 +41,7 @@ void testBlock() {
     static_NSObject = [NSObject new];
     block(2);
 }
-
+ 
 void testBlock1() {
 
     static NSArray *array;
